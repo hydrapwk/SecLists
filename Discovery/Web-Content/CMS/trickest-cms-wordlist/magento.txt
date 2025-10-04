@@ -243,6 +243,7 @@ dev/tests/api-functional/framework/Magento/TestFramework/Helper/Customer.php
 dev/tests/api-functional/framework/autoload.php
 dev/tests/api-functional/phpunit_graphql.xml.dist
 dev/tests/api-functional/isolate_rest.txt
+dev/tests/api-functional/testsuite/Magento/Quote/Api/ValidateProductWebsiteAssignmentTest.php
 dev/tests/api-functional/testsuite/Magento/Quote/Api/GuestShipmentEstimationWithExtensionAttributesTest.php
 dev/tests/api-functional/testsuite/Magento/Quote/Api/GuestShippingMethodManagementTest.php
 dev/tests/api-functional/testsuite/Magento/Quote/Api/CartManagementTest.php
@@ -290,6 +291,7 @@ dev/tests/api-functional/testsuite/Magento/Webapi/Routing/CoreRoutingTest.php
 dev/tests/api-functional/testsuite/Magento/Webapi/Routing/BaseService.php
 dev/tests/api-functional/testsuite/Magento/Webapi/JoinDirectivesTest.php
 dev/tests/api-functional/testsuite/Magento/Webapi/DataObjectSerialization/ServiceSerializationTest.php
+dev/tests/api-functional/testsuite/Magento/Checkout/Api/GuestShippingInformationManagementValidationTest.php
 dev/tests/api-functional/testsuite/Magento/ConfigurableProduct/Api/OptionRepositoryTest.php
 dev/tests/api-functional/testsuite/Magento/ConfigurableProduct/Api/LinkManagementTest.php
 dev/tests/api-functional/testsuite/Magento/ConfigurableProduct/Api/ConfigurableProductManagementTest.php
@@ -407,6 +409,7 @@ dev/tests/api-functional/testsuite/Magento/Sales/Service/V1/InvoiceGetTest.php
 dev/tests/api-functional/testsuite/Magento/Sales/Service/V1/CreditmemoCancelTest.php
 dev/tests/api-functional/testsuite/Magento/Sales/Service/V1/OrderGetStatusTest.php
 dev/tests/api-functional/testsuite/Magento/Sales/Service/V1/OrderCancelTest.php
+dev/tests/api-functional/testsuite/Magento/Sales/Service/V1/OrderCreationValidationTest.php
 dev/tests/api-functional/testsuite/Magento/Sales/Service/V1/ShipmentEmailTest.php
 dev/tests/api-functional/testsuite/Magento/Sales/Service/V1/CreditmemoCreateTest.php
 dev/tests/api-functional/testsuite/Magento/Sales/Service/V1/InvoiceAddCommentTest.php
@@ -479,6 +482,7 @@ dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Guest/GetSelectedShippi
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Guest/GetAvailableShippingMethodsTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Guest/GetCartIsVirtualTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Guest/GetShippingAddressWhenCartIsVirtualTest.php
+dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Guest/GetCartItemsV2Test.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Guest/GetAvailablePaymentMethodsTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Guest/AddSimpleProductToCartTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Guest/SetBillingAddressOnCartTest.php
@@ -500,6 +504,7 @@ dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Guest/GetSpecifiedShipp
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Guest/RemoveCouponFromCartTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Guest/SetGuestEmailOnCartTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/GetMaskedQuoteIdByReservedOrderId.php
+dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/MergeCartsTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/AddProductsToCartTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/AddSimpleProductWithCustomOptionsToCartTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/StoreConfigResolverTest.php
@@ -531,6 +536,7 @@ dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Customer/MergeCartsTest
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Customer/GetCartTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Customer/SetPurchaseOrderPaymentMethodOnCartTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Customer/CartTotalsTest.php
+dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Customer/CustomerCartStoreScopeTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Customer/GetCartPaginatedItemsTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Customer/AddVirtualProductToCartTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Quote/Customer/GetSelectedShippingMethodTest.php
@@ -659,6 +665,7 @@ dev/tests/api-functional/testsuite/Magento/GraphQl/Catalog/ProductAttributeOptio
 dev/tests/api-functional/testsuite/Magento/GraphQl/Catalog/CategoryListTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Catalog/ProductSearchWithTranslatedMessageTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Catalog/ProductSearchAggregationsTest.php
+dev/tests/api-functional/testsuite/Magento/GraphQl/Catalog/ProductVisibilitySearchTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Catalog/Options/CustomizableOptionsTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Catalog/Options/Uid/CustomizableOptionsUidTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Catalog/ProductViewTest.php
@@ -695,6 +702,7 @@ dev/tests/api-functional/testsuite/Magento/GraphQl/VariablesSupportQueryTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/ContactUs/ContactUsTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Cms/CmsPageTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Cms/CmsBlockTest.php
+dev/tests/api-functional/testsuite/Magento/GraphQl/Cms/CmsPageErrorHandlingTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Newsletter/Guest/SubscribeEmailToNewsletterTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Newsletter/NewsletterIsEnabledTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Newsletter/Customer/SubscribeEmailToNewsletterTest.php
@@ -715,6 +723,7 @@ dev/tests/api-functional/testsuite/Magento/GraphQl/Sales/ProductsWithCustomOptio
 dev/tests/api-functional/testsuite/Magento/GraphQl/Sales/ReorderMultipleProductsTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Sales/OrdersTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Sales/CustomerOrderItemProductTest.php
+dev/tests/api-functional/testsuite/Magento/GraphQl/Sales/ProductResolverTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Sales/SalesTaxStoreConfigTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Sales/ReorderOverlayProductTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Sales/OrderIsVirtualTest.php
@@ -820,6 +829,7 @@ dev/tests/api-functional/testsuite/Magento/GraphQl/Customer/ConfirmationStatusTe
 dev/tests/api-functional/testsuite/Magento/GraphQl/Customer/RequestPasswordResetEmailTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Customer/StoreConfigTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Customer/CreateCustomerV2WithCustomAttributesTest.php
+dev/tests/api-functional/testsuite/Magento/GraphQl/Customer/GetCustomerAddressesTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Customer/UpdateCustomerEmailTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Customer/CreateCustomerTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Customer/GetCustomerAddressesV2Test.php
@@ -1163,6 +1173,7 @@ dev/tests/setup-integration/testsuite/Magento/Developer/_files/SetupUpgrade/Test
 dev/tests/setup-integration/testsuite/Magento/Developer/_files/SetupUpgrade/TestSetupDeclarationModule9/db_schema_install.xml
 dev/tests/setup-integration/testsuite/Magento/Developer/Console/Command/TablesWhitelistGenerateCommandTest.php
 dev/tests/setup-integration/testsuite/Magento/Developer/Console/Command/SetupInstallTest.php
+dev/tests/setup-integration/testsuite/Magento/Developer/Console/Command/SetupInstallMvcTest.php
 dev/tests/setup-integration/testsuite/Magento/Developer/Console/Command/SetupUpgradeTest.php
 dev/tests/config/AllureConfig.php
 dev/tests/js/jasmine/assets/apply/config.json
@@ -1186,6 +1197,7 @@ dev/tests/js/jasmine/assets/lib/web/mage/tabs.html
 dev/tests/js/jasmine/assets/lib/web/mage/account_menu.html
 dev/tests/js/jasmine/assets/lib/web/mage/translate-inline.html
 dev/tests/js/jasmine/tests/app/code/Magento/MediaGalleryUi/adminhtml/js/grid/messages.test.js
+dev/tests/js/jasmine/tests/app/code/Magento/LoginAsCustomerAdminUi/adminhtml/web/js/confirmation-popup.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Swatches/view/frontend/web/js/swatch-renderer.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Theme/view/frontend/web/js/view/breadcrumbs.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Theme/view/frontend/web/js/view/add-home-breadcrumb.test.js
@@ -1299,11 +1311,13 @@ dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/lib/ko/bind/color-picker.
 dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/lib/ko/bind/dimVisible.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/lib/ko/bind/i18n.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/lib/validation/rules.test.js
+dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/lib/core/collection.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/lib/events.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/lib/registry/registry.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Ui/adminhtml/js/form/insert.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Ui/frontend/js/model/messages.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Wishlist/view/frontend/web/js/view/wishlist.test.js
+dev/tests/js/jasmine/tests/app/code/Magento/Wishlist/view/frontend/web/js/view/wishlist-mixin.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Wishlist/view/frontend/web/js/add-to-wishlist.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Catalog/base/js/product/list/columns/image.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Catalog/base/js/product/list/columns/final-price.test.js
@@ -1363,6 +1377,8 @@ dev/tests/js/jasmine/tests/app/code/Magento/Backend/view/adminhtml/web/js/valida
 dev/tests/js/jasmine/tests/app/code/Magento/Backend/view/adminhtml/web/js/media-uploader.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Directory/frontend/js/region-updater.test.js
 dev/tests/js/jasmine/tests/lib/web/magnify.test.js
+dev/tests/js/jasmine/tests/lib/web/prototype/prototype.test.js
+dev/tests/js/jasmine/tests/lib/web/magnifier.test.js
 dev/tests/js/jasmine/tests/lib/mage/accordion.test.js
 dev/tests/js/jasmine/tests/lib/mage/validation.test.js
 dev/tests/js/jasmine/tests/lib/mage/backend/suggest.test.js
@@ -1581,6 +1597,16 @@ dev/tests/integration/_files/Magento/TestModuleCspUtil/Controller/Csp/Aware.php
 dev/tests/integration/_files/Magento/TestModuleCspUtil/Controller/Csp/Helper.php
 dev/tests/integration/_files/Magento/TestModuleCspUtil/composer.json
 dev/tests/integration/_files/Magento/TestModuleCspUtil/registration.php
+dev/tests/integration/_files/Magento/TestModuleAsyncStomp/etc/queue_publisher.xml
+dev/tests/integration/_files/Magento/TestModuleAsyncStomp/etc/communication.xml
+dev/tests/integration/_files/Magento/TestModuleAsyncStomp/etc/queue_consumer.xml
+dev/tests/integration/_files/Magento/TestModuleAsyncStomp/etc/queue_topology.xml
+dev/tests/integration/_files/Magento/TestModuleAsyncStomp/etc/module.xml
+dev/tests/integration/_files/Magento/TestModuleAsyncStomp/Model/CustomHandler.php
+dev/tests/integration/_files/Magento/TestModuleAsyncStomp/Model/AsyncTestData.php
+dev/tests/integration/_files/Magento/TestModuleAsyncStomp/Model/RequestHandler.php
+dev/tests/integration/_files/Magento/TestModuleAsyncStomp/Model/WildCardHandler.php
+dev/tests/integration/_files/Magento/TestModuleAsyncStomp/registration.php
 dev/tests/integration/allure/allure.config.php
 dev/tests/integration/framework/bootstrap.php
 dev/tests/integration/framework/Magento/TestFramework/Interception/PluginList.php
@@ -1779,6 +1805,7 @@ dev/tests/integration/framework/Magento/TestFramework/Helper/Amqp.php
 dev/tests/integration/framework/Magento/TestFramework/Helper/Eav.php
 dev/tests/integration/framework/Magento/TestFramework/Helper/Memory.php
 dev/tests/integration/framework/Magento/TestFramework/Helper/Xpath.php
+dev/tests/integration/framework/Magento/TestFramework/Helper/Stomp.php
 dev/tests/integration/framework/Magento/TestFramework/SalesRule/Model/GetSalesRuleByName.php
 dev/tests/integration/framework/Magento/TestFramework/Backend/App/Config.php
 dev/tests/integration/framework/Magento/TestFramework/CookieManager.php
@@ -2486,6 +2513,7 @@ dev/tests/integration/testsuite/Magento/Checkout/Block/Cart/CrosssellTest.php
 dev/tests/integration/testsuite/Magento/Checkout/Api/ShippingInformationManagementTest.php
 dev/tests/integration/testsuite/Magento/Checkout/Api/GuestShippingInformationManagementTest.php
 dev/tests/integration/testsuite/Magento/Checkout/ViewModel/CartTest.php
+dev/tests/integration/testsuite/Magento/Checkout/Helper/DataTest.php
 dev/tests/integration/testsuite/Magento/TestFixture/Controller/Adminhtml/Noroute.php
 dev/tests/integration/testsuite/Magento/JwtFrameworkAdapter/Model/JwsManagerTest.php
 dev/tests/integration/testsuite/Magento/ConfigurableProduct/etc/extension_attributes.xml
@@ -2991,6 +3019,7 @@ dev/tests/integration/testsuite/Magento/Framework/View/Design/Theme/ValidatorTes
 dev/tests/integration/testsuite/Magento/Framework/View/Design/Theme/LabelTest.php
 dev/tests/integration/testsuite/Magento/Framework/View/Design/Fallback/RulePoolTest.php
 dev/tests/integration/testsuite/Magento/Framework/View/Asset/MinifierTest.php
+dev/tests/integration/testsuite/Magento/Framework/View/Asset/MinificationTest.php
 dev/tests/integration/testsuite/Magento/Framework/View/Utility/_files/layout/handle_two.xml
 dev/tests/integration/testsuite/Magento/Framework/View/Utility/_files/layout/handle_one.xml
 dev/tests/integration/testsuite/Magento/Framework/View/Utility/_files/layout/handle_three.xml
@@ -3133,6 +3162,10 @@ dev/tests/integration/testsuite/Magento/Framework/Session/Config/Validator/Cooki
 dev/tests/integration/testsuite/Magento/Framework/Session/Config/Validator/CookieLifetimeValidatorTest.php
 dev/tests/integration/testsuite/Magento/Framework/Session/ConfigTest.php
 dev/tests/integration/testsuite/Magento/Framework/Session/SaveHandlerTest.php
+dev/tests/integration/testsuite/Magento/Framework/Stomp/TopologyTest.php
+dev/tests/integration/testsuite/Magento/Framework/Stomp/UseCase/AsyncMultipleTopicsWithEachQueueTest.php
+dev/tests/integration/testsuite/Magento/Framework/Stomp/UseCase/AsyncMultipleHandlersTest.php
+dev/tests/integration/testsuite/Magento/Framework/Stomp/UseCase/WaitAndNotWaitMessagesTest.php
 dev/tests/integration/testsuite/Magento/Framework/Data/Wysiwyg/NormalizerTest.php
 dev/tests/integration/testsuite/Magento/Framework/Data/Form/Element/DateTest.php
 dev/tests/integration/testsuite/Magento/Framework/Data/Form/Element/FieldsetTest.php
@@ -3307,7 +3340,7 @@ dev/tests/integration/testsuite/Magento/CatalogRuleConfigurable/_files/configura
 dev/tests/integration/testsuite/Magento/CatalogRuleConfigurable/Model/Product/Type/Configurable/PriceTest.php
 dev/tests/integration/testsuite/Magento/CatalogRuleConfigurable/Model/Indexer/Product/ProductRuleIndexerTest.php
 dev/tests/integration/testsuite/Magento/CatalogWidget/Model/Rule/Condition/ProductTest.php
-dev/tests/integration/testsuite/Magento/CatalogWidget/Block/Product/ProductListTest.php
+dev/tests/integration/testsuite/Magento/CatalogWidget/Block/Product/ProductsListTest.php
 dev/tests/integration/testsuite/Magento/CatalogWidget/Block/Product/Widget/ConditionsTest.php
 dev/tests/integration/testsuite/Magento/Developer/Model/Logger/Handler/DebugTest.php
 dev/tests/integration/testsuite/Magento/Developer/Model/Config/Backend/AllowedIpsTest.php
@@ -4636,6 +4669,7 @@ dev/tests/integration/testsuite/Magento/Catalog/controllers/_files/attribute_sys
 dev/tests/integration/testsuite/Magento/Catalog/controllers/_files/products.php
 dev/tests/integration/testsuite/Magento/Catalog/Cron/DeleteOutdatedPriceValuesTest.php
 dev/tests/integration/testsuite/Magento/Catalog/Console/Command/ProductAttributesCleanUpTest.php
+dev/tests/integration/testsuite/Magento/Catalog/Ui/DataProvider/Product/Listing/Collector/UrlTest.php
 dev/tests/integration/testsuite/Magento/Catalog/Ui/DataProvider/Product/Related/UpSellDataProviderTest.php
 dev/tests/integration/testsuite/Magento/Catalog/Ui/DataProvider/Product/Related/AbstractRelationsDataProviderTest.php
 dev/tests/integration/testsuite/Magento/Catalog/Ui/DataProvider/Product/Related/CrossSellDataProviderTest.php
@@ -5231,6 +5265,7 @@ dev/tests/integration/testsuite/Magento/Sales/Model/Order/Payment/TransactionTes
 dev/tests/integration/testsuite/Magento/Sales/Model/Order/ShipmentTest.php
 dev/tests/integration/testsuite/Magento/Sales/Model/Order/Reorder/UnavailableProductsProviderTest.php
 dev/tests/integration/testsuite/Magento/Sales/Model/Order/ItemRepositoryTest.php
+dev/tests/integration/testsuite/Magento/Sales/Model/OrderPrefixSuffixVisibilityTest.php
 dev/tests/integration/testsuite/Magento/Sales/Model/AdminOrder/CreateTest.php
 dev/tests/integration/testsuite/Magento/Sales/Model/ResourceModel/Order/Address/CollectionTest.php
 dev/tests/integration/testsuite/Magento/Sales/Model/ResourceModel/Order/AddressTest.php
@@ -6022,6 +6057,7 @@ dev/tests/integration/testsuite/Magento/Indexer/Model/Indexer/DeferCacheCleaning
 dev/tests/integration/testsuite/Magento/Indexer/Console/Command/IndexerReindexCommandTest.php
 dev/tests/integration/testsuite/Magento/Sitemap/_files/sitemap_products.php
 dev/tests/integration/testsuite/Magento/Sitemap/_files/sitemap_products_rollback.php
+dev/tests/integration/testsuite/Magento/Sitemap/Plugin/Cron/Model/Config/Backend/SitemapPluginTest.php
 dev/tests/integration/testsuite/Magento/Sitemap/Model/ResourceModel/Catalog/ProductTest.php
 dev/tests/integration/testsuite/Magento/Sitemap/Model/ResourceModel/Cms/PageTest.php
 dev/tests/integration/testsuite/Magento/Sitemap/Model/ItemProvider/CmsPageConfigReaderTest.php
@@ -6352,6 +6388,7 @@ dev/tests/integration/testsuite/Magento/Customer/_files/customer_with_website.ph
 dev/tests/integration/testsuite/Magento/Customer/_files/customer_confirmed_email_template.php
 dev/tests/integration/testsuite/Magento/Customer/_files/quote.php
 dev/tests/integration/testsuite/Magento/Customer/_files/customer_shipping_address_36104_rollback.php
+dev/tests/integration/testsuite/Magento/Customer/Plugin/ValidateDobOnSaveDataTest.php
 dev/tests/integration/testsuite/Magento/Customer/Controller/Section/LoadTest.php
 dev/tests/integration/testsuite/Magento/Customer/Controller/Address/FormPost/UpdateAddressTest.php
 dev/tests/integration/testsuite/Magento/Customer/Controller/Address/FormPost/CreateAddressTest.php
@@ -6379,6 +6416,7 @@ dev/tests/integration/testsuite/Magento/Customer/Controller/AccountTest.php
 dev/tests/integration/testsuite/Magento/Customer/Controller/AuthenticationTest.php
 dev/tests/integration/testsuite/Magento/Customer/Controller/ForgotPasswordPostTest.php
 dev/tests/integration/testsuite/Magento/Customer/Controller/SendTest.php
+dev/tests/integration/testsuite/Magento/Customer/Controller/Account/LogoutTest.php
 dev/tests/integration/testsuite/Magento/Customer/Controller/Account/LoginPostTest.php
 dev/tests/integration/testsuite/Magento/Customer/Controller/Account/CreatePostTest.php
 dev/tests/integration/testsuite/Magento/Customer/Controller/Account/EmailTemplateTest.php
@@ -6567,6 +6605,7 @@ dev/tests/integration/testsuite/Magento/Reports/_files/recently_compared_product
 dev/tests/integration/testsuite/Magento/Reports/_files/recently_viewed_disabled_product_by_customer.php
 dev/tests/integration/testsuite/Magento/Reports/_files/recently_viewed_product_by_customer_second_website.php
 dev/tests/integration/testsuite/Magento/Reports/_files/recently_compared_out_of_stock_product.php
+dev/tests/integration/testsuite/Magento/Reports/Controller/Adminhtml/Report/ViewedTest.php
 dev/tests/integration/testsuite/Magento/Reports/Controller/Adminhtml/Report/Product/ViewedTest.php
 dev/tests/integration/testsuite/Magento/Reports/Controller/Adminhtml/Report/Product/SoldTest.php
 dev/tests/integration/testsuite/Magento/Reports/Controller/Adminhtml/Report/Statistics/IndexTest.php
@@ -6761,7 +6800,6 @@ dev/tests/integration/testsuite/Magento/Backend/Block/System/Store/Edit/Form/Web
 dev/tests/integration/testsuite/Magento/Backend/Block/System/Store/Edit/Form/StoreTest.php
 dev/tests/integration/testsuite/Magento/Backend/Block/WidgetTest.php
 dev/tests/integration/testsuite/Magento/Backend/Block/Dashboard/Orders/GridTest.php
-dev/tests/integration/testsuite/Magento/Backend/Block/Dashboard/Tab/Products/ViewedTest.php
 dev/tests/integration/testsuite/Magento/Backend/Block/Dashboard/Chart/PeriodTest.php
 dev/tests/integration/testsuite/Magento/Backend/Block/MenuTest.php
 dev/tests/integration/testsuite/Magento/Backend/Block/TemplateTest.php
@@ -7917,6 +7955,7 @@ app/code/Magento/LoginAsCustomerAdminUi/Block/Adminhtml/ConfirmationPopup.php
 app/code/Magento/LoginAsCustomerAdminUi/Ui/Customer/Component/Control/LoginAsCustomerButton.php
 app/code/Magento/LoginAsCustomerAdminUi/Ui/Customer/Component/ConfirmationPopup/Options.php
 app/code/Magento/LoginAsCustomerAdminUi/Ui/Customer/Component/Button/DataProvider.php
+app/code/Magento/LoginAsCustomerAdminUi/i18n/en_US.csv
 app/code/Magento/LoginAsCustomerAdminUi/Test/Mftf/test-dependency-errors-detailed
 app/code/Magento/LoginAsCustomerAdminUi/Test/Mftf/test-dependency-allowlist
 app/code/Magento/LoginAsCustomerAdminUi/Test/Mftf/Test/AdminLoginAsCustomerManualSelectionTest.xml
@@ -8109,6 +8148,7 @@ app/code/Magento/User/Observer/Backend/ForceAdminPasswordChangeObserver.php
 app/code/Magento/User/Api/Data/UserInterface.php
 app/code/Magento/User/i18n/en_US.csv
 app/code/Magento/User/Test/Mftf/Section/AdminCreateRoleSection.xml
+app/code/Magento/User/Test/Mftf/Section/AdminSecurityConfigSection.xml
 app/code/Magento/User/Test/Mftf/Section/AdminRoleGridSection/AdminRoleGridSection.xml
 app/code/Magento/User/Test/Mftf/Section/AdminRoleGridSection/AdminDeleteRoleSection.xml
 app/code/Magento/User/Test/Mftf/Section/AdminEditUserSection.xml
@@ -8125,9 +8165,11 @@ app/code/Magento/User/Test/Mftf/Metadata/UserRoleMeta.xml
 app/code/Magento/User/Test/Mftf/Metadata/UserMeta.xml
 app/code/Magento/User/Test/Mftf/README.md
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminUserOpenAdminRolesPageActionGroup.xml
+app/code/Magento/User/Test/Mftf/ActionGroup/AdminSetMinimumPasswordLengthActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AssertAdminUserInGridActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminCreateUserWithRoleAndLocaleActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminOpenForgotPasswordPageActionGroup.xml
+app/code/Magento/User/Test/Mftf/ActionGroup/AdminFillNewUserFormActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminStartCreateUserRoleActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminCreateRoleActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminFillUserRoleFormActionGroup.xml
@@ -8138,8 +8180,10 @@ app/code/Magento/User/Test/Mftf/ActionGroup/AdminCreateRoleWithoutScopeSelection
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminUnlockAdminUserEntityViaCLIActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminDeleteCreatedUserActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminFillForgotPasswordFormActionGroup.xml
+app/code/Magento/User/Test/Mftf/ActionGroup/AdminSetUserPasswordAndTestValidationActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminChangePasswordActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminCreateUserWithRoleAndIsActiveActionGroup.xml
+app/code/Magento/User/Test/Mftf/ActionGroup/AdminCompleteUserCreationWithRoleActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminAddRestrictedRoleActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AssertAdminRoleNotInGridActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AssertAdminUserIsInGridActionGroup.xml
@@ -8165,6 +8209,7 @@ app/code/Magento/User/Test/Mftf/ActionGroup/AdminUpdateUserRoleActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminFillNewUserFormRequiredFieldsActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminDeleteCustomUserActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminChooseUserRoleResourceActionGroup.xml
+app/code/Magento/User/Test/Mftf/ActionGroup/AdminNavigateToSecurityConfigActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminDeleteRoleActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AssertAdminUserNotInGridActionGroup.xml
 app/code/Magento/User/Test/Mftf/ActionGroup/AdminDeleteUserActionGroup.xml
@@ -8183,15 +8228,18 @@ app/code/Magento/User/Test/Mftf/test-dependency-allowlist
 app/code/Magento/User/Test/Mftf/Data/AdminMenuData.xml
 app/code/Magento/User/Test/Mftf/Data/UserData.xml
 app/code/Magento/User/Test/Mftf/Data/UserRoleData.xml
+app/code/Magento/User/Test/Mftf/Data/UserPasswordTestData.xml
 app/code/Magento/User/Test/Mftf/Test/AdminBulkOperationsLogIsNotAccessibleForAdminUserWithLimitedAccessTest.xml
 app/code/Magento/User/Test/Mftf/Test/AdminSystemAllUsersNavigateMenuTest.xml
 app/code/Magento/User/Test/Mftf/Test/AdminCreateUserRoleEntityTest.xml
 app/code/Magento/User/Test/Mftf/Test/AdminResetUserPasswordFailedTest.xml
 app/code/Magento/User/Test/Mftf/Test/AdminCreateInactiveUserEntityTest.xml
 app/code/Magento/User/Test/Mftf/Test/AdminDeleteOwnAdminUserAccountTest.xml
+app/code/Magento/User/Test/Mftf/Test/AdminMinimumPasswordLengthSaveTest.xml
 app/code/Magento/User/Test/Mftf/Test/AdminUpdateUserTest.xml
 app/code/Magento/User/Test/Mftf/Test/AdminCreateActiveUserEntityTest.xml
 app/code/Magento/User/Test/Mftf/Test/AdminUnlockAdminUserEntityTest.xml
+app/code/Magento/User/Test/Mftf/Test/AdminUserCreationPasswordLengthValidationTest.xml
 app/code/Magento/User/Test/Mftf/Test/AdminUpdateUserRoleTest.xml
 app/code/Magento/User/Test/Mftf/Test/AdminDeleteAdminUserEntityTest.xml
 app/code/Magento/User/Test/Mftf/Test/AdminReviewOrderWithReportsPermissionTest.xml
@@ -8201,8 +8249,8 @@ app/code/Magento/User/Test/Mftf/Test/AdminSystemLockedUsersNavigateMenuTest.xml
 app/code/Magento/User/Test/Mftf/Test/AdminUnlockAdminUserEntityViaCLITest.xml
 app/code/Magento/User/Test/Mftf/Test/AdminUpdateUserPasswordTest.xml
 app/code/Magento/User/Test/Mftf/Test/AdminSystemUserRolesNavigateMenuTest.xml
-app/code/Magento/User/Test/Mftf/Test/AdminSystemManageEncryptionKeyNavigateMenuTest.xml
 app/code/Magento/User/Test/Mftf/LICENSE_AFL.txt
+app/code/Magento/User/Test/Mftf/Page/AdminSecurityConfigPage.xml
 app/code/Magento/User/Test/Mftf/Page/AdminUserEditPage.xml
 app/code/Magento/User/Test/Mftf/Page/AdminRolesPage.xml
 app/code/Magento/User/Test/Mftf/Page/AdminEditRolePage.xml
@@ -8237,6 +8285,7 @@ app/code/Magento/User/Test/Fixture/User.php
 app/code/Magento/User/composer.json
 app/code/Magento/User/LICENSE_AFL.txt
 app/code/Magento/User/ViewModel/JsonSerializer.php
+app/code/Magento/User/ViewModel/PasswordConfig.php
 app/code/Magento/User/Helper/Data.php
 app/code/Magento/User/Helper/ForceSignIn.php
 app/code/Magento/User/LICENSE.txt
@@ -8545,6 +8594,7 @@ app/code/Magento/Quote/Setup/Patch/Data/WishlistDataCleanUp.php
 app/code/Magento/Quote/Setup/Patch/Data/InstallEntityTypes.php
 app/code/Magento/Quote/Setup/Patch/Data/ConvertSerializedDataToJson.php
 app/code/Magento/Quote/Plugin/Webapi/Model/ErrorRedirectProcessor.php
+app/code/Magento/Quote/Plugin/Webapi/ValidateProductWebsiteAssignment.php
 app/code/Magento/Quote/Plugin/UpdateQuoteStore.php
 app/code/Magento/Quote/Plugin/UpdateCartId.php
 app/code/Magento/Quote/Plugin/SendOrderNotification.php
@@ -8598,16 +8648,21 @@ app/code/Magento/Quote/Model/Quote/Validator/MinimumOrderAmount/ValidationMessag
 app/code/Magento/Quote/Model/Quote/Relation.php
 app/code/Magento/Quote/Model/Quote/Payment.php
 app/code/Magento/Quote/Model/Quote/Item/CartItemProcessorInterface.php
+app/code/Magento/Quote/Model/Quote/Item/CartItemValidatorResultInterface.php
+app/code/Magento/Quote/Model/Quote/Item/CartItemValidatorChain.php
 app/code/Magento/Quote/Model/Quote/Item/Option/ComparatorInterface.php
 app/code/Magento/Quote/Model/Quote/Item/Option/Comparator.php
 app/code/Magento/Quote/Model/Quote/Item/CartItemPersister.php
 app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php
 app/code/Magento/Quote/Model/Quote/Item/Processor.php
+app/code/Magento/Quote/Model/Quote/Item/CartItemValidatorResult.php
 app/code/Magento/Quote/Model/Quote/Item/RelatedProducts.php
 app/code/Magento/Quote/Model/Quote/Item/ToOrderItem.php
 app/code/Magento/Quote/Model/Quote/Item/CartItemProcessorsPool.php
 app/code/Magento/Quote/Model/Quote/Item/Updater.php
+app/code/Magento/Quote/Model/Quote/Item/CartItemCustomOptionsValidator.php
 app/code/Magento/Quote/Model/Quote/Item/CartItemOptionsProcessor.php
+app/code/Magento/Quote/Model/Quote/Item/CartItemValidatorInterface.php
 app/code/Magento/Quote/Model/Quote/Item/Compare.php
 app/code/Magento/Quote/Model/Quote/Item/Repository.php
 app/code/Magento/Quote/Model/Quote/Item/Option.php
@@ -8798,6 +8853,7 @@ app/code/Magento/Quote/Test/Mftf/Test/StorefrontGuestCheckoutDisabledProductTest
 app/code/Magento/Quote/Test/Mftf/LICENSE_AFL.txt
 app/code/Magento/Quote/Test/Mftf/LICENSE.txt
 app/code/Magento/Quote/Test/Unit/Setup/QuoteSetupTest.php
+app/code/Magento/Quote/Test/Unit/Plugin/Webapi/ValidateProductWebsiteAssignmentTest.php
 app/code/Magento/Quote/Test/Unit/Plugin/SendOrderNotificationTest.php
 app/code/Magento/Quote/Test/Unit/Model/ShippingAddressAssignmentTest.php
 app/code/Magento/Quote/Test/Unit/Model/CartAddressMutexTest.php
@@ -9191,6 +9247,7 @@ app/code/Magento/Swatches/Test/Mftf/ActionGroup/AdminUploadFileInVisualSwatchAct
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/AddTextSwatchToProductActionGroup.xml
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/AddVisualSwatchWithProductWithStorefrontPreviewImageConfigActionGroup.xml
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/SetColorPickerByHexActionGroup.xml
+app/code/Magento/Swatches/Test/Mftf/ActionGroup/AddVisualSwatchNoDefaultActionGroup.xml
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/AddVisualSwatchToProductWithStorefrontConfigActionGroup.xml
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/AddTextSwatchToProductWithTwoOptionsActionGroup.xml
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/StorefrontUpdateCartConfigurableProductWithSwatchesActionGroup.xml
@@ -9229,6 +9286,7 @@ app/code/Magento/Swatches/Test/Mftf/Test/CreateConfigProductBasedOnVisualSwatchA
 app/code/Magento/Swatches/Test/Mftf/Test/StorefrontSwatchAttributeDisplayedInWidgetCMSTest.xml
 app/code/Magento/Swatches/Test/Mftf/Test/AdminCheckColorUploadChooserVisualSwatchTest.xml
 app/code/Magento/Swatches/Test/Mftf/Test/StorefrontConfigurableProductSwatchTierPriceTest.xml
+app/code/Magento/Swatches/Test/Mftf/Test/AdminSwatchValuesRequiredBehaviorTest.xml
 app/code/Magento/Swatches/Test/Mftf/Test/StorefrontSelectedByQueryParamsConfigurableSwatchOptionsThumbImagesTest.xml
 app/code/Magento/Swatches/Test/Mftf/Test/StorefrontSwatchAttributesDisplayInWidgetCMSTest.xml
 app/code/Magento/Swatches/Test/Mftf/Test/StorefrontDisplayAllCharactersOnTextSwatchTest.xml
@@ -10766,6 +10824,7 @@ app/code/Magento/Deploy/Test/Unit/Package/LocaleResolverTest.php
 app/code/Magento/Deploy/Test/Unit/Package/Processor/PreProcessor/CssTest.php
 app/code/Magento/Deploy/Test/Unit/Service/MinifyTemplatesTest.php
 app/code/Magento/Deploy/Test/Unit/Service/DeployTranslationsDictionaryTest.php
+app/code/Magento/Deploy/Test/Unit/Service/DeployRequireJsConfigTest.php
 app/code/Magento/Deploy/Test/Unit/Service/DeployStaticContentTest.php
 app/code/Magento/Deploy/Test/Unit/Collector/CollectorTest.php
 app/code/Magento/Deploy/Config/BundleConfig.php
@@ -11026,6 +11085,7 @@ app/code/Magento/Checkout/Controller/Sidebar/RemoveItem.php
 app/code/Magento/Checkout/Controller/Account/Create.php
 app/code/Magento/Checkout/Controller/Account/DelegateCreate.php
 app/code/Magento/Checkout/README.md
+app/code/Magento/Checkout/Model/Config.php
 app/code/Magento/Checkout/Model/CaptchaPaymentSavingRateLimiter.php
 app/code/Magento/Checkout/Model/PaymentInformationManagement.php
 app/code/Magento/Checkout/Model/ConfigProviderInterface.php
@@ -11060,6 +11120,7 @@ app/code/Magento/Checkout/Model/GuestTotalsInformationManagement.php
 app/code/Magento/Checkout/Model/CompositeConfigProvider.php
 app/code/Magento/Checkout/Model/StoreSwitcher/RedirectDataPostprocessor.php
 app/code/Magento/Checkout/Model/StoreSwitcher/RedirectDataPreprocessor.php
+app/code/Magento/Checkout/Model/Config/Source/CartMergePreference.php
 app/code/Magento/Checkout/Model/Config/Source/Cart/Summary.php
 app/code/Magento/Checkout/Model/PaymentCaptchaConfigProvider.php
 app/code/Magento/Checkout/Model/ShippingInformationManagement.php
@@ -11239,7 +11300,6 @@ app/code/Magento/Checkout/Test/Mftf/ActionGroup/StorefrontFillOptionFieldInputAc
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/StorefrontCartEstimateShippingAndTaxActionGroup.xml
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/StorefrontAddCategoryProductToCartActionGroup.xml
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/AssertStorefrontCheckoutPaymentSummaryTotalActionGroup.xml
-app/code/Magento/Checkout/Test/Mftf/ActionGroup/StorefrontVerifyFedexShippingMethodPricesActionGroup.xml
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/AssertCrossSellProductOnShoppingCartPageActionGroup.xml
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/StorefrontCheckoutClickSignInLinkActionGroup.xml
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/StorefrontOpenCartFromMinicartActionGroup.xml
@@ -11274,6 +11334,7 @@ app/code/Magento/Checkout/Test/Mftf/ActionGroup/GuestCheckoutFillShippingNoWaitF
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/LoginAsCustomerOnCheckoutPageActionGroup.xml
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/StorefrontCheckoutCartFillEstimateShippingAndTaxActionGroup.xml
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/StorefrontCheckoutForwardFromShippingStepActionGroup.xml
+app/code/Magento/Checkout/Test/Mftf/ActionGroup/StorefrontRemoveProductsInMultiAddressCheckoutActionGroup.xml
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/LoggedInUserCheckoutFillingShippingSectionActionGroup.xml
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/StorefrontAddProductToCartFromCategoryActionGroup.xml
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/StorefrontClearShoppingCartActionGroup.xml
@@ -11322,6 +11383,7 @@ app/code/Magento/Checkout/Test/Mftf/ActionGroup/StorefrontSelectAddressInCheckou
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/GoToCheckoutFromCartActionGroup.xml
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/StorefrontCheckCartDiscountAndSummaryActionGroup.xml
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/StorefrontCheckoutCheckProductActionGroup.xml
+app/code/Magento/Checkout/Test/Mftf/ActionGroup/AdminEnableDisableLoginOnCheckoutActionGroup.xml
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/AssertStorefrontCheckoutPaymentSummarySubtotalActionGroup.xml
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/AssertStorefrontElementInvisibleActionGroup.xml
 app/code/Magento/Checkout/Test/Mftf/ActionGroup/StorefrontCheckoutClickNextOnShippingStepActionGroup.xml
@@ -11354,12 +11416,14 @@ app/code/Magento/Checkout/Test/Mftf/class-file-naming-allowlist
 app/code/Magento/Checkout/Test/Mftf/test-dependency-errors-detailed
 app/code/Magento/Checkout/Test/Mftf/test-dependency-allowlist
 app/code/Magento/Checkout/Test/Mftf/Data/CountryData.xml
+app/code/Magento/Checkout/Test/Mftf/Data/CheckoutMessageData.xml
 app/code/Magento/Checkout/Test/Mftf/Data/ConfigData.xml
 app/code/Magento/Checkout/Test/Mftf/Data/EstimateAndTaxData.xml
 app/code/Magento/Checkout/Test/Mftf/Data/QuoteData.xml
 app/code/Magento/Checkout/Test/Mftf/Data/ConstData.xml
 app/code/Magento/Checkout/Test/Mftf/Data/CheckoutConfigData.xml
 app/code/Magento/Checkout/Test/Mftf/Test/DeleteBundleFixedProductFromShoppingCartTest.xml
+app/code/Magento/Checkout/Test/Mftf/Test/StoreFrontCheckoutFreeShippingRecalculationAfterCouponCodeAppliedTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/StorefrontAddBundleDynamicProductToShoppingCartWithDisableMiniCartSidebarTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/StorefrontCheckCartAndSummaryBlockItemDisplayWithDefaultDisplayLimitationTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/StorefrontAddDownloadableProductToShoppingCartTest.xml
@@ -11394,6 +11458,7 @@ app/code/Magento/Checkout/Test/Mftf/Test/StorefrontCheckCartItemDisplayWithDefau
 app/code/Magento/Checkout/Test/Mftf/Test/StorefrontDeleteSimpleAndVirtualProductFromMiniShoppingCartTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/CheckNotVisibleProductInMinicartTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/StoreFrontAddProductWithAllTypesOfCustomOptionToTheShoppingCartWithoutAnySelectedOptionTest.xml
+app/code/Magento/Checkout/Test/Mftf/Test/StorefrontCartSidebarSynchronizationWithCustomerLoginTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/DeleteGroupedProductFromShoppingCartTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/OnePageCheckoutAsCustomerUsingNonExistentCustomerGroupTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/VerifyThatOptionAllowToChooseStateIfItIsOptionalForCountryIsApplicableForCheckoutFlowTest.xml
@@ -11449,6 +11514,7 @@ app/code/Magento/Checkout/Test/Mftf/Test/StorefrontCheckSimpleProductCartItemDis
 app/code/Magento/Checkout/Test/Mftf/Test/DisplayPriceForShippingRateOnShoppingCartPageWithSpecificTaxDisplaySettingsTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/StorefrontGuestCheckoutDataPersistTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/StorefrontCustomerLoginDuringCheckoutTest.xml
+app/code/Magento/Checkout/Test/Mftf/Test/StorefrontAssertAddressDisappearanceAfterItemRemovalTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/AddressStateFieldShouldNotAcceptJustIntegerValuesTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/StorefrontShowConfirmPopupBeforeSwitchingPageIfItemQuantityChangedTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/StorefrontNotApplicableShippingMethodInReviewAndPaymentStepTest.xml
@@ -11470,6 +11536,7 @@ app/code/Magento/Checkout/Test/Mftf/Test/ConfiguringInstantPurchaseFunctionality
 app/code/Magento/Checkout/Test/Mftf/Test/StorefrontDeleteSimpleProductFromMiniShoppingCartTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/StoreFrontCheckCustomerInfoCreatedByGuestTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/DeleteDownloadableProductFromShoppingCartTest.xml
+app/code/Magento/Checkout/Test/Mftf/Test/StorefrontCartSidebarSynchronizationWithCustomerDataLifetimeTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/StoreFrontUpdateShoppingCartWhileUpdateMinicartTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/CheckCheckoutSuccessPageTest/CheckCheckoutSuccessPageAsGuestTest.xml
 app/code/Magento/Checkout/Test/Mftf/Test/CheckCheckoutSuccessPageTest/CheckCheckoutSuccessPageAsRegisterCustomerTest.xml
@@ -11691,6 +11758,7 @@ app/code/Magento/UrlRewriteGraphQl/Model/Resolver/UrlRewrite/CustomUrlLocator.ph
 app/code/Magento/UrlRewriteGraphQl/Model/Resolver/UrlRewrite/UrlResolverIdentity.php
 app/code/Magento/UrlRewriteGraphQl/Model/Resolver/UrlRewrite.php
 app/code/Magento/UrlRewriteGraphQl/Test/Mftf/README.md
+app/code/Magento/UrlRewriteGraphQl/Test/Unit/Model/Resolver/AbstractEntityUrlTest.php
 app/code/Magento/UrlRewriteGraphQl/composer.json
 app/code/Magento/UrlRewriteGraphQl/registration.php
 app/code/Magento/JwtFrameworkAdapter/etc/di.xml
@@ -11994,6 +12062,7 @@ app/code/Magento/ConfigurableProduct/Test/Mftf/ActionGroup/SelectCreatedAttribut
 app/code/Magento/ConfigurableProduct/Test/Mftf/ActionGroup/CheckConfigurableProductInCheckoutCartItemsActionGroup.xml
 app/code/Magento/ConfigurableProduct/Test/Mftf/ActionGroup/AdminCreateConfigurationsForAttributeActionGroup.xml
 app/code/Magento/ConfigurableProduct/Test/Mftf/ActionGroup/CreateNewAttributeActionGroup.xml
+app/code/Magento/ConfigurableProduct/Test/Mftf/ActionGroup/AdminSelectSingleImageAndPriceForConfigurationAttributeActionGroup.xml
 app/code/Magento/ConfigurableProduct/Test/Mftf/ActionGroup/CreateConfigurableProductWithAttributeSetActionGroup.xml
 app/code/Magento/ConfigurableProduct/Test/Mftf/ActionGroup/AdminAddOptionForAttributeActionGroup.xml
 app/code/Magento/ConfigurableProduct/Test/Mftf/ActionGroup/StorefrontCheckConfigurableProductActionGroup.xml
@@ -12062,6 +12131,7 @@ app/code/Magento/ConfigurableProduct/Test/Mftf/ActionGroup/AdminConfigurableWiza
 app/code/Magento/ConfigurableProduct/Test/Mftf/ActionGroup/AdminOrderConfigureConfigurableProductActionGroup.xml
 app/code/Magento/ConfigurableProduct/Test/Mftf/ActionGroup/CreateConfigurationsForAttributeWithImagesActionGroup.xml
 app/code/Magento/ConfigurableProduct/Test/Mftf/ActionGroup/AdminCreateNewDefaultAttributeForAsWithOptionActionGroup.xml
+app/code/Magento/ConfigurableProduct/Test/Mftf/ActionGroup/AdminSelectTwoOptionsPerAttributeActionGroup.xml
 app/code/Magento/ConfigurableProduct/Test/Mftf/ActionGroup/AdminConfigurableProductChangeOptionWeightActionGroup.xml
 app/code/Magento/ConfigurableProduct/Test/Mftf/ActionGroup/CreateCustomAttributeActionGroup.xml
 app/code/Magento/ConfigurableProduct/Test/Mftf/ActionGroup/AdminSelectAllValueOfTwoAttributesPageActionGroup.xml
@@ -12182,6 +12252,7 @@ app/code/Magento/ConfigurableProduct/Test/Mftf/Test/ProductsQtyReturnAfterOrderC
 app/code/Magento/ConfigurableProduct/Test/Mftf/Test/AdminCheckConfigurableProductAttributeValueUniquenessTest.xml
 app/code/Magento/ConfigurableProduct/Test/Mftf/Test/AdminConfigurableProductDisplayAssociatedProductPriceTest.xml
 app/code/Magento/ConfigurableProduct/Test/Mftf/Test/AdminConfigurableProductLongSkuTest.xml
+app/code/Magento/ConfigurableProduct/Test/Mftf/Test/AdminCloneConfigurableProductWithTwoAttributesTest.xml
 app/code/Magento/ConfigurableProduct/Test/Mftf/LICENSE_AFL.txt
 app/code/Magento/ConfigurableProduct/Test/Mftf/Page/AdminProductCreatePage.xml
 app/code/Magento/ConfigurableProduct/Test/Mftf/LICENSE.txt
@@ -12261,6 +12332,7 @@ app/code/Magento/ConfigurableProduct/Test/Unit/Ui/DataProvider/Product/Form/Modi
 app/code/Magento/ConfigurableProduct/Test/Unit/Ui/DataProvider/Product/Form/Modifier/CustomOptionsTest.php
 app/code/Magento/ConfigurableProduct/Test/Unit/Ui/DataProvider/Product/Form/Modifier/ConfigurableAttributeSetHandlerTest.php
 app/code/Magento/ConfigurableProduct/Test/Unit/Pricing/Price/ConfigurablePriceResolverTest.php
+app/code/Magento/ConfigurableProduct/Test/Unit/Pricing/Price/ConfigurableRegularPriceTest.php
 app/code/Magento/ConfigurableProduct/Test/Unit/Pricing/Price/LowestPriceOptionsProviderTest.php
 app/code/Magento/ConfigurableProduct/Test/Unit/Pricing/Render/FinalPriceBoxTest.php
 app/code/Magento/ConfigurableProduct/Test/Unit/Pricing/Render/TierPriceBoxTest.php
@@ -12560,6 +12632,7 @@ app/code/Magento/QuoteGraphQl/Model/Cart/Payment/PaymentMethodBuilder.php
 app/code/Magento/QuoteGraphQl/Model/Cart/Payment/AdditionalDataProviderInterface.php
 app/code/Magento/QuoteGraphQl/Model/Cart/SetShippingMethodsOnCart.php
 app/code/Magento/QuoteGraphQl/Model/OrderErrorProcessor.php
+app/code/Magento/QuoteGraphQl/Model/OrderResponseFormatter.php
 app/code/Magento/QuoteGraphQl/Model/BackpressureRequestTypeExtractor.php
 app/code/Magento/QuoteGraphQl/Model/GetOptionsRegularPrice.php
 app/code/Magento/QuoteGraphQl/Model/ErrorMapper.php
@@ -12613,6 +12686,7 @@ app/code/Magento/QuoteGraphQl/Model/Resolver/RemoveItemFromCart.php
 app/code/Magento/QuoteGraphQl/Model/GetDiscounts.php
 app/code/Magento/QuoteGraphQl/Model/QuoteException.php
 app/code/Magento/QuoteGraphQl/i18n/en_US.csv
+app/code/Magento/QuoteGraphQl/Test/Unit/Model/OrderResponseFormatterTest.php
 app/code/Magento/QuoteGraphQl/Test/Unit/Model/CartItem/ProductStockTest.php
 app/code/Magento/QuoteGraphQl/Test/Unit/Model/QuoteExceptionTest.php
 app/code/Magento/QuoteGraphQl/Test/Unit/Model/Cart/GetCartForCheckoutTest.php
@@ -14135,6 +14209,7 @@ app/code/Magento/SalesGraphQl/Model/Resolver/Reorder.php
 app/code/Magento/SalesGraphQl/Api/OrderAvailableActionProviderInterface.php
 app/code/Magento/SalesGraphQl/Test/Unit/Model/Resolver/ReorderTest.php
 app/code/Magento/SalesGraphQl/Test/Unit/Model/Resolver/OrderTotalTest.php
+app/code/Magento/SalesGraphQl/Test/Unit/Model/Resolver/CustomerOrders/Query/OrderFilterTest.php
 app/code/Magento/SalesGraphQl/composer.json
 app/code/Magento/SalesGraphQl/registration.php
 app/code/Magento/QuoteBundleOptions/etc/graphql/di.xml
@@ -14154,6 +14229,7 @@ app/code/Magento/CatalogImportExport/etc/di.xml
 app/code/Magento/CatalogImportExport/etc/module.xml
 app/code/Magento/CatalogImportExport/etc/export.xml
 app/code/Magento/CatalogImportExport/etc/config.xml
+app/code/Magento/CatalogImportExport/README.md
 app/code/Magento/CatalogImportExport/Model/Import/Product/StoreResolver.php
 app/code/Magento/CatalogImportExport/Model/Import/Product/SkuStorage.php
 app/code/Magento/CatalogImportExport/Model/Import/Product/CategoryProcessor.php
@@ -14169,6 +14245,7 @@ app/code/Magento/CatalogImportExport/Model/Import/Product/Validator/Website.php
 app/code/Magento/CatalogImportExport/Model/Import/Product/Validator/AbstractPrice.php
 app/code/Magento/CatalogImportExport/Model/Import/Product/Validator/TierPrice.php
 app/code/Magento/CatalogImportExport/Model/Import/Product/Validator/LayoutUpdate.php
+app/code/Magento/CatalogImportExport/Model/Import/Product/Validator/Backorders.php
 app/code/Magento/CatalogImportExport/Model/Import/Product/Validator/Media.php
 app/code/Magento/CatalogImportExport/Model/Import/Product/Validator/LayoutUpdatePermissions.php
 app/code/Magento/CatalogImportExport/Model/Import/Product/Validator/Name.php
@@ -14239,6 +14316,7 @@ app/code/Magento/CatalogImportExport/Test/Unit/Model/Import/Product/SkuProcessor
 app/code/Magento/CatalogImportExport/Test/Unit/Model/Import/Product/ValidatorTest.php
 app/code/Magento/CatalogImportExport/Test/Unit/Model/Import/Product/Validator/NameTest.php
 app/code/Magento/CatalogImportExport/Test/Unit/Model/Import/Product/Validator/TierPriceTest.php
+app/code/Magento/CatalogImportExport/Test/Unit/Model/Import/Product/Validator/BackordersTest.php
 app/code/Magento/CatalogImportExport/Test/Unit/Model/Import/Product/Validator/LayoutUpdateTest.php
 app/code/Magento/CatalogImportExport/Test/Unit/Model/Import/Product/Validator/WeightTest.php
 app/code/Magento/CatalogImportExport/Test/Unit/Model/Import/Product/Validator/QuantityTest.php
@@ -14411,6 +14489,7 @@ app/code/Magento/CatalogRule/Setup/Patch/Schema/CleanUpProductPriceReplicaTable.
 app/code/Magento/CatalogRule/Setup/Patch/Data/UpdateClassAliasesForCatalogRules.php
 app/code/Magento/CatalogRule/Setup/Patch/Data/ConvertSerializedDataToJson.php
 app/code/Magento/CatalogRule/Plugin/Model/Product/Action.php
+app/code/Magento/CatalogRule/Plugin/Model/Indexer/RecollectQuoteAfterRuleChange.php
 app/code/Magento/CatalogRule/Plugin/Indexer/Category.php
 app/code/Magento/CatalogRule/Plugin/Indexer/Website.php
 app/code/Magento/CatalogRule/Plugin/Indexer/Product/Save/ApplyRulesAfterReindex.php
@@ -15021,6 +15100,7 @@ app/code/Magento/UrlRewrite/Test/Unit/Model/MergeDataProviderTest.php
 app/code/Magento/UrlRewrite/Test/Unit/Block/Catalog/Edit/FormTest.php
 app/code/Magento/UrlRewrite/Test/Unit/Service/V1/Data/UrlRewriteTest.php
 app/code/Magento/UrlRewrite/Test/Unit/Helper/UrlRewriteTest.php
+app/code/Magento/UrlRewrite/Test/Fixture/CmsPage.php
 app/code/Magento/UrlRewrite/Test/Fixture/UrlRewrite.php
 app/code/Magento/UrlRewrite/composer.json
 app/code/Magento/UrlRewrite/LICENSE_AFL.txt
@@ -16313,6 +16393,7 @@ app/code/Magento/Wishlist/view/base/templates/product/price/bundle/configured_pr
 app/code/Magento/Wishlist/view/adminhtml/layout/customer_index_wishlist.xml
 app/code/Magento/Wishlist/view/adminhtml/templates/customer/edit/tab/wishlist.phtml
 app/code/Magento/Wishlist/view/frontend/web/js/view/wishlist.js
+app/code/Magento/Wishlist/view/frontend/web/js/view/wishlist-mixin.js
 app/code/Magento/Wishlist/view/frontend/web/js/search.js
 app/code/Magento/Wishlist/view/frontend/web/js/product/addtowishlist-button.js
 app/code/Magento/Wishlist/view/frontend/web/js/wishlist.js
@@ -16695,6 +16776,7 @@ app/code/Magento/MediaGalleryRenditions/Test/Mftf/Test/AdminMediaGalleryInsertLa
 app/code/Magento/MediaGalleryRenditions/Test/Integration/Model/GetRenditionPathTest.php
 app/code/Magento/MediaGalleryRenditions/Test/Integration/Model/ExtractAssetsFromContentWithRenditionTest.php
 app/code/Magento/MediaGalleryRenditions/Test/Integration/Model/GenerateRenditionsTest.php
+app/code/Magento/MediaGalleryRenditions/Test/Unit/Model/GenerateRenditionsTest.php
 app/code/Magento/MediaGalleryRenditions/Test/Unit/Model/ConfigTest.php
 app/code/Magento/MediaGalleryRenditions/composer.json
 app/code/Magento/MediaGalleryRenditions/LICENSE_AFL.txt
@@ -17497,6 +17579,7 @@ app/code/Magento/Catalog/Model/Product/Option/Type/File/ExistingValidate.php
 app/code/Magento/Catalog/Model/Product/Option/Type/File/ValidateFactory.php
 app/code/Magento/Catalog/Model/Product/Option/Type/File/ValidatorInfo.php
 app/code/Magento/Catalog/Model/Product/Option/Type/File/RequestAwareValidatorFile.php
+app/code/Magento/Catalog/Model/Product/Option/Type/File/ImageContentProcessor.php
 app/code/Magento/Catalog/Model/Product/Option/Type/File/Validator.php
 app/code/Magento/Catalog/Model/Product/Option/Type/File/ValidatorFile.php
 app/code/Magento/Catalog/Model/Product/Option/Type/DefaultType.php
@@ -18517,6 +18600,7 @@ app/code/Magento/Catalog/Test/Mftf/ActionGroup/AssertAdminProductShortDescriptio
 app/code/Magento/Catalog/Test/Mftf/ActionGroup/AdminCheckProductIsMissingInCategoryProductsGridActionGroup.xml
 app/code/Magento/Catalog/Test/Mftf/ActionGroup/MoveCategoryActionGroup.xml
 app/code/Magento/Catalog/Test/Mftf/ActionGroup/AdminAssignProductToCategoryActionGroup.xml
+app/code/Magento/Catalog/Test/Mftf/ActionGroup/AdminEditFieldTitleCustomOptionsActionGroup.xml
 app/code/Magento/Catalog/Test/Mftf/ActionGroup/AssertProductOnAdminGridActionGroup.xml
 app/code/Magento/Catalog/Test/Mftf/ActionGroup/AdminProductFormCategoryNotExistInCategoryListActionGroup.xml
 app/code/Magento/Catalog/Test/Mftf/ActionGroup/FilterProductGridByNameActionGroup.xml
@@ -18770,6 +18854,7 @@ app/code/Magento/Catalog/Test/Mftf/ActionGroup/AssertMetaDescriptionInProductEdi
 app/code/Magento/Catalog/Test/Mftf/ActionGroup/AssertProductImageStorefrontProductPageActionGroup.xml
 app/code/Magento/Catalog/Test/Mftf/ActionGroup/StorefrontAssertFotoramaImageAvailabilityActionGroup.xml
 app/code/Magento/Catalog/Test/Mftf/ActionGroup/AdminAssertParentChildCategoryTreeElementsActionGroup.xml
+app/code/Magento/Catalog/Test/Mftf/ActionGroup/AdminAssertCustomOptionBasedOnPositionActionGroup.xml
 app/code/Magento/Catalog/Test/Mftf/ActionGroup/AdminCreateProductAttributeWithCustomChangesActionGroup.xml
 app/code/Magento/Catalog/Test/Mftf/ActionGroup/FillNewProductCategoryActionGroup.xml
 app/code/Magento/Catalog/Test/Mftf/ActionGroup/AdminCreateAttributeFromProductPageWithScopeActionGroup.xml
@@ -19207,6 +19292,7 @@ app/code/Magento/Catalog/Test/Mftf/Test/AdminCreateInactiveFlatCategoryAndUpdate
 app/code/Magento/Catalog/Test/Mftf/Test/AdminCreateSimpleProductWithUnicodeTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminUpdateSimpleProductWithRegularPriceInStockNotVisibleIndividuallyTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminShowDoubleSpacesInProductGridTest.xml
+app/code/Magento/Catalog/Test/Mftf/Test/StorefrontCategoryPathWithStoreCodeNoSuffixTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/StorefrontCheckCustomOptionPriceDifferentCurrencyTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AddNewProductAttributeInProductPageTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/DeleteCategoriesTest.xml
@@ -19217,6 +19303,7 @@ app/code/Magento/Catalog/Test/Mftf/Test/NewProductsListWidgetVirtualProductTest.
 app/code/Magento/Catalog/Test/Mftf/Test/StoreFrontAssertProductFinalPriceChangesDynamicallyOnProductPageWithTierPricesConfiguredTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminFilterByNameByStoreViewOnProductGridTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminUnassignProductAttributeFromAttributeSetTest.xml
+app/code/Magento/Catalog/Test/Mftf/Test/StorefrontCategoryNavigationHighlightingTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminCreateProductCustomAttributeSetTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminTierPriceNotAvailableForProductOptionsWithoutTierPriceTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminCreateCategoriesWithTheSameCategoryNamesTest.xml
@@ -19247,6 +19334,7 @@ app/code/Magento/Catalog/Test/Mftf/Test/AdminMassUpdateProductStatusStoreViewSco
 app/code/Magento/Catalog/Test/Mftf/Test/VerifyChildCategoriesShouldNotIncludeInMenuTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminAlertDoseNotAppearOnProductPageTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminCreateRootCategoryAndSubcategoriesTest.xml
+app/code/Magento/Catalog/Test/Mftf/Test/AdminUnassignAllWebsitesFromProductTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AlterAnchorCategoryTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminCreateCategoryWithProductsGridFilterTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminDeleteProductsImageWithCustomOptionTest.xml
@@ -19295,6 +19383,7 @@ app/code/Magento/Catalog/Test/Mftf/Test/AdminCreateSwatchAttributeWithSpecialCha
 app/code/Magento/Catalog/Test/Mftf/Test/AdminUpdateCategoryAndMakeInactiveTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminRemoveCustomOptionsFromProductTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminProductGridFilteringByDateAttributeTest.xml
+app/code/Magento/Catalog/Test/Mftf/Test/StorefrontCategoryNavigationHighlightingWithStoreCodeTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminAddRemoveProductImageVirtualProductTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminDeleteSystemProductAttributeTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/StorefrontDifferentImagesForCategoryForDifferentStoreViewTest.xml
@@ -19364,6 +19453,7 @@ app/code/Magento/Catalog/Test/Mftf/Test/AdminSimpleSetEditRelatedProductsTest.xm
 app/code/Magento/Catalog/Test/Mftf/Test/AdminRemoveImageFromCategoryTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminRequiredFieldsHaveRequiredFieldIndicatorTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminDateAttributeCalendarPositioningTest.xml
+app/code/Magento/Catalog/Test/Mftf/Test/AdminImportCustomOptionsBetweenProductsTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminBackorderAllowedAddProductToCartTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminApplyTierPriceToProductTest/AdminApplyTierPriceToProductTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminApplyTierPriceToProductTest/AdminApplyTierPriceToProductWithPercentageDiscountTest.xml
@@ -19417,6 +19507,7 @@ app/code/Magento/Catalog/Test/Mftf/Test/AdminMoveCategoryToAnotherPositionInCate
 app/code/Magento/Catalog/Test/Mftf/Test/AdminUpdateSimpleProductWithRegularPriceInStockWithCustomOptionsTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/StorefrontOnlyXProductLeftForSimpleProductsTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/DisplayRefreshCacheAfterChangingCategoryPageLayoutTest.xml
+app/code/Magento/Catalog/Test/Mftf/Test/AdminVerifySubTotalRoundingForDecimalQuantityEnabledTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminMassProductPriceUpdateTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminCreateDuplicateProductTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminSimpleProductSetEditContentTest.xml
@@ -19457,6 +19548,7 @@ app/code/Magento/Catalog/Test/Mftf/Page/AdminCategoryPage.xml
 app/code/Magento/Catalog/Test/Mftf/Page/AdminProductDeletePage.xml
 app/code/Magento/Catalog/Test/Mftf/Page/AdminProductAttributeSetEditPage.xml
 app/code/Magento/Catalog/Test/Mftf/Helper/CatalogHelper.php
+app/code/Magento/Catalog/Test/Mftf/Helper/ProductApiHelper.php
 app/code/Magento/Catalog/Test/Mftf/Helper/LocalFileAssertions.php
 app/code/Magento/Catalog/Test/Mftf/LICENSE.txt
 app/code/Magento/Catalog/Test/Unit/Setup/CategorySetupTest.php
@@ -19472,6 +19564,7 @@ app/code/Magento/Catalog/Test/Unit/Plugin/Model/Indexer/Category/Product/Execute
 app/code/Magento/Catalog/Test/Unit/Plugin/Block/TopmenuTest.php
 app/code/Magento/Catalog/Test/Unit/Controller/Adminhtml/Product/ValidateTest.php
 app/code/Magento/Catalog/Test/Unit/Controller/Adminhtml/Product/Action/Attribute/EditTest.php
+app/code/Magento/Catalog/Test/Unit/Controller/Adminhtml/Product/Action/Attribute/SaveTest.php
 app/code/Magento/Catalog/Test/Unit/Controller/Adminhtml/Product/BuilderTest.php
 app/code/Magento/Catalog/Test/Unit/Controller/Adminhtml/Product/ReloadTest.php
 app/code/Magento/Catalog/Test/Unit/Controller/Adminhtml/Product/Attribute/ValidateTest.php
@@ -19765,6 +19858,7 @@ app/code/Magento/Catalog/Test/Unit/Model/Indexer/Category/Product/Plugin/MviewSt
 app/code/Magento/Catalog/Test/Unit/Model/Indexer/Category/Product/Plugin/StoreViewTest.php
 app/code/Magento/Catalog/Test/Unit/Model/Indexer/Category/Product/Action/RowsTest.php
 app/code/Magento/Catalog/Test/Unit/Model/Indexer/Category/Product/RowSizeEstimatorTest.php
+app/code/Magento/Catalog/Test/Unit/Model/Indexer/Category/Product/TableMaintainerTest.php
 app/code/Magento/Catalog/Test/Unit/Model/Indexer/Category/Flat/StateTest.php
 app/code/Magento/Catalog/Test/Unit/Model/Indexer/Category/Flat/System/Config/ModeTest.php
 app/code/Magento/Catalog/Test/Unit/Model/Indexer/Category/Flat/Plugin/StoreGroupTest.php
@@ -20600,6 +20694,7 @@ app/code/Magento/Tax/Test/Mftf/Test/AdminCreateTaxRuleWithZipRangeTest.xml
 app/code/Magento/Tax/Test/Mftf/Test/ApplyTaxesAndFptForSimpleProductWithCanadianPstOriginTest.xml
 app/code/Magento/Tax/Test/Mftf/Test/AdminCreateTaxRuleWithNewTaxClassesAndTaxRateTest.xml
 app/code/Magento/Tax/Test/Mftf/Test/AdminVerifyTaxIsCalculatedCorrectlyIfShippingMethodsAreDisabledTest.xml
+app/code/Magento/Tax/Test/Mftf/Test/StorefrontVerifyRecentlyViewedWidgetTaxPricesTest.xml
 app/code/Magento/Tax/Test/Mftf/Test/AdminCreateDefaultsTaxRuleTest.xml
 app/code/Magento/Tax/Test/Mftf/Test/DeleteTaxRateEntityTest.xml
 app/code/Magento/Tax/Test/Mftf/Test/Update1299TaxRateEntityTest.xml
@@ -20999,6 +21094,7 @@ app/code/Magento/Shipping/Test/Mftf/Section/AdminShippingMethodFreeShippingSecti
 app/code/Magento/Shipping/Test/Mftf/Section/AdminShipmentMainActionsSection.xml
 app/code/Magento/Shipping/Test/Mftf/Section/AdminShipmentTrackingSection.xml
 app/code/Magento/Shipping/Test/Mftf/Section/AdminShipmentItemsSection.xml
+app/code/Magento/Shipping/Test/Mftf/Suite/USPSShippingForRestAPISuite.xml
 app/code/Magento/Shipping/Test/Mftf/Suite/USPSShippingSuite.xml
 app/code/Magento/Shipping/Test/Mftf/Metadata/ShippingOriginMeta.xml
 app/code/Magento/Shipping/Test/Mftf/Metadata/ShippingMethodsMeta.xml
@@ -21074,6 +21170,7 @@ app/code/Magento/Shipping/Test/Mftf/Data/AdminShippingSettingsConfigData.xml
 app/code/Magento/Shipping/Test/Mftf/Test/StorefrontAssertShippingPricesPresentWithFreeShippingAfterApplyingCartRuleTest.xml
 app/code/Magento/Shipping/Test/Mftf/Test/AdminCheckInputFieldsDisabledAfterAppConfigDumpTest.xml
 app/code/Magento/Shipping/Test/Mftf/Test/StorefrontBillingAddressShownOnSecondCheckoutIfUPSEnabledTest.xml
+app/code/Magento/Shipping/Test/Mftf/Test/StorefrontVerifyUSPSShippingPriceIsZeroWhenFreeShippingThresholdEnabledTest.xml
 app/code/Magento/Shipping/Test/Mftf/Test/AdminCheckTheConfirmationPopupTest.xml
 app/code/Magento/Shipping/Test/Mftf/Test/AdminConfigUPSShippingMethodAndAddProductInStorefrontTest.xml
 app/code/Magento/Shipping/Test/Mftf/Test/AdminPlaceOrderUsingUPSOnlineShippingCarrierForRegisteredCustomerTest.xml
@@ -21081,6 +21178,7 @@ app/code/Magento/Shipping/Test/Mftf/Test/AdminDisableShipmentCommentsTest.xml
 app/code/Magento/Shipping/Test/Mftf/Test/AdminValidateShippingTrackingNumberTest.xml
 app/code/Magento/Shipping/Test/Mftf/Test/AdminPlaceOrderWithUSPSOnlineShippingCarrierTest.xml
 app/code/Magento/Shipping/Test/Mftf/Test/MultipleAddressCheckoutWithTwoDifferentRatesTest.xml
+app/code/Magento/Shipping/Test/Mftf/Test/AdminCreateShippingLabelForUSPSShippingMethodTest.xml
 app/code/Magento/Shipping/Test/Mftf/Test/AdminCreateShipmentEntityWithTrackingNumberTest.xml
 app/code/Magento/Shipping/Test/Mftf/Test/EndToEndB2CAdminTest.xml
 app/code/Magento/Shipping/Test/Mftf/Test/StorefrontMultishippingCheckoutWithOnlineShippingMethodTest.xml
@@ -22008,6 +22106,7 @@ app/code/Magento/Cms/Test/Mftf/ActionGroup/DeletePageByUrlKeyActionGroup.xml
 app/code/Magento/Cms/Test/Mftf/ActionGroup/AdminCmsPageSetTitleActionGroup.xml
 app/code/Magento/Cms/Test/Mftf/ActionGroup/AdminEditCMSPageContentActionGroup.xml
 app/code/Magento/Cms/Test/Mftf/ActionGroup/NavigateToCreatedCMSPageActionGroup.xml
+app/code/Magento/Cms/Test/Mftf/ActionGroup/AdminSelectRecentlyViewedProductWidgetFromInsertWidgetSlideOutActionGroup.xml
 app/code/Magento/Cms/Test/Mftf/ActionGroup/VerifyMediaGalleryStorageActionsActionGroup.xml
 app/code/Magento/Cms/Test/Mftf/ActionGroup/AdminClickAddNewPageOnPagesGridActionGroup.xml
 app/code/Magento/Cms/Test/Mftf/ActionGroup/AdminDisableCMSPageActionGroup.xml
@@ -22290,6 +22389,7 @@ app/code/Magento/TaxImportExport/Controller/Adminhtml/Rate/ExportCsv.php
 app/code/Magento/TaxImportExport/Controller/Adminhtml/Rate/ImportExport.php
 app/code/Magento/TaxImportExport/Controller/Adminhtml/Rate/ExportXml.php
 app/code/Magento/TaxImportExport/Controller/Adminhtml/Rate.php
+app/code/Magento/TaxImportExport/README.md
 app/code/Magento/TaxImportExport/Model/Rate/CsvImportHandler.php
 app/code/Magento/TaxImportExport/Block/Adminhtml/Rate/ImportExportHeader.php
 app/code/Magento/TaxImportExport/Block/Adminhtml/Rate/Grid/Renderer/Country.php
@@ -22906,6 +23006,7 @@ app/code/Magento/Sales/Setup/Patch/Data/FillQuoteAddressIdInSalesOrderAddress.ph
 app/code/Magento/Sales/Setup/Patch/Data/ConvertSerializedDataToJson.php
 app/code/Magento/Sales/Setup/SerializedDataConverter.php
 app/code/Magento/Sales/Plugin/ShippingLabelConverter.php
+app/code/Magento/Sales/Plugin/Model/OrderRepositoryPlugin.php
 app/code/Magento/Sales/Plugin/Model/Export/OrderGridExportFilterColumn.php
 app/code/Magento/Sales/Plugin/Model/ResourceModel/Order/Relation/AddExistingItemProductOptions.php
 app/code/Magento/Sales/Plugin/Model/ResourceModel/Order/OrderGridCollectionFilter.php
@@ -24105,6 +24206,7 @@ app/code/Magento/Sales/Test/Mftf/Test/MoveLastOrderedSimpleProductOnOrderPageTes
 app/code/Magento/Sales/Test/Mftf/Test/AdminMassOrdersHoldOnCompleteTest.xml
 app/code/Magento/Sales/Test/Mftf/Test/AdminVerifyFieldToFilterOnOrdersGridTest.xml
 app/code/Magento/Sales/Test/Mftf/Test/AdminCreateCreditMemoConfigurableProductTest.xml
+app/code/Magento/Sales/Test/Mftf/Test/AdminOrderEditParentChildOrderLinksTest.xml
 app/code/Magento/Sales/Test/Mftf/Test/AdminUnassignCustomOrderStatusTest.xml
 app/code/Magento/Sales/Test/Mftf/Test/AdminCreateOrderWithBackOrderQtyEnabledProductTest.xml
 app/code/Magento/Sales/Test/Mftf/Test/AdminMassOrdersHoldOnProcessingAndPendingTest.xml
@@ -24145,6 +24247,7 @@ app/code/Magento/Sales/Test/Mftf/Test/StorefrontReorderVirtualProductAsCustomerT
 app/code/Magento/Sales/Test/Mftf/Test/AdminReorderWithCatalogPriceRuleDiscountTest.xml
 app/code/Magento/Sales/Test/Mftf/Test/AdminCheckingDateAfterChangeFrenchCanadaInterfaceLocaleTest.xml
 app/code/Magento/Sales/Test/Mftf/Test/AdminSalesInvoicesNavigateMenuTest.xml
+app/code/Magento/Sales/Test/Mftf/Test/StorefrontCheckBundlePriceInOtherCurrencyWithSpecialPriceTest.xml
 app/code/Magento/Sales/Test/Mftf/Test/AdminCancelTheCreatedOrderWithCheckMoneyOrderPaymentMethodTest.xml
 app/code/Magento/Sales/Test/Mftf/Test/EndToEndB2CAdminTest.xml
 app/code/Magento/Sales/Test/Mftf/Test/AdminCreateOrderWithMinimumAmountEnabledTest.xml
@@ -24206,6 +24309,7 @@ app/code/Magento/Sales/Test/Mftf/Test/AddSimpleProductToOrderFromShoppingCartTes
 app/code/Magento/Sales/Test/Mftf/Test/CreateInvoiceAndCheckInvoiceOrderTest.xml
 app/code/Magento/Sales/Test/Mftf/Test/AdminVerifyBehaviorOfDefaultStatusForProcessingStateTest.xml
 app/code/Magento/Sales/Test/Mftf/Test/StorefrontPrintOrderGuestTest.xml
+app/code/Magento/Sales/Test/Mftf/Test/AdminOrderPlacementWithPaymentMethodConstraintsTest.xml
 app/code/Magento/Sales/Test/Mftf/Test/AdminSalesOrdersNavigateMenuTest.xml
 app/code/Magento/Sales/Test/Mftf/Test/StorefrontVerifyOrderDashboardTest.xml
 app/code/Magento/Sales/Test/Mftf/Test/MoveRecentlyViewedBundleFixedProductOnOrderPageTest.xml
@@ -24267,6 +24371,7 @@ app/code/Magento/Sales/Test/Unit/Setup/SalesSetupTest.php
 app/code/Magento/Sales/Test/Unit/Setup/SalesOrderPaymentDataConverterTest.php
 app/code/Magento/Sales/Test/Unit/Setup/SerializedDataConverterTest.php
 app/code/Magento/Sales/Test/Unit/Plugin/Model/Export/OrderGridExportFilterColumnTest.php
+app/code/Magento/Sales/Test/Unit/Plugin/Model/OrderRepositoryPluginTest.php
 app/code/Magento/Sales/Test/Unit/Plugin/Model/Service/Invoice/AddTransactionCommentAfterCaptureTest.php
 app/code/Magento/Sales/Test/Unit/Controller/Adminhtml/Invoice/AbstractInvoice/EmailTest.php
 app/code/Magento/Sales/Test/Unit/Controller/Adminhtml/Order/CreditmemoLoaderTest.php
@@ -26264,6 +26369,7 @@ app/code/Magento/Persistent/Test/Mftf/Test/GuestCheckoutWithEnabledPersistentTes
 app/code/Magento/Persistent/Test/Mftf/Test/StorefrontVerifyShoppingCartPersistenceUnderLongTermCookieTest.xml
 app/code/Magento/Persistent/Test/Mftf/Test/StorefrontVerifyShoppingCartPersistenceTest.xml
 app/code/Magento/Persistent/Test/Mftf/Test/CheckShoppingCartBehaviorAfterSessionExpiredTest.xml
+app/code/Magento/Persistent/Test/Mftf/Test/StorefrontPersistentCartCheckoutAfterSessionExpireLoginAndOrderTest.xml
 app/code/Magento/Persistent/Test/Mftf/LICENSE_AFL.txt
 app/code/Magento/Persistent/Test/Mftf/LICENSE.txt
 app/code/Magento/Persistent/Test/Unit/Plugin/AddPersistentRememberMeInitPluginTest.php
@@ -27027,6 +27133,7 @@ app/code/Magento/Paypal/Test/Mftf/ActionGroup/AdminUnselectDisableFundingActionG
 app/code/Magento/Paypal/Test/Mftf/ActionGroup/EnablePayPalSolutionWithoutSaveActionGroup.xml
 app/code/Magento/Paypal/Test/Mftf/ActionGroup/StorefrontLoginToPayPalStandardActionGroup.xml
 app/code/Magento/Paypal/Test/Mftf/ActionGroup/AdminEnablePayPalExpressCheckoutPayLaterActionGroup.xml
+app/code/Magento/Paypal/Test/Mftf/ActionGroup/AdminPayPalExpressCheckoutEnableWithOutContextActionGroup.xml
 app/code/Magento/Paypal/Test/Mftf/ActionGroup/StorefrontLoginToPayPalValidatePayPalPopupCreateAccountActionGroup.xml
 app/code/Magento/Paypal/Test/Mftf/ActionGroup/AdminSavePaymentConfigActionGroup.xml
 app/code/Magento/Paypal/Test/Mftf/ActionGroup/AdminAssertDefaultValuesInPayflowPaylaterHomePageActionGroup.xml
@@ -27073,6 +27180,7 @@ app/code/Magento/Paypal/Test/Mftf/Test/StorefrontGuestCheckoutUsingPayPalCheckou
 app/code/Magento/Paypal/Test/Mftf/Test/AdminConfigPaymentsSectionStateTest.xml
 app/code/Magento/Paypal/Test/Mftf/Test/AdminCancelSalesOrderPlacedWithPayPalPaymentsProTest.xml
 app/code/Magento/Paypal/Test/Mftf/Test/StorefrontSeveralTermsAndConditionsWithDifferentTypesArePresentedOnPayflowLinkReviewPageTest.xml
+app/code/Magento/Paypal/Test/Mftf/Test/AdminCreatePartialCaptureForOrderPaidWithPayPalPaymentsAdvancedTest.xml
 app/code/Magento/Paypal/Test/Mftf/Test/StorefrontPaypalSmartButtonInProductPageTest.xml
 app/code/Magento/Paypal/Test/Mftf/Test/StorefrontPaypalSmartButtonWithEuroCurrencyTest.xml
 app/code/Magento/Paypal/Test/Mftf/Test/StorefrontVoidSalesOrderPlacedWithPayPalPayFlowEditionTest.xml
@@ -27083,6 +27191,7 @@ app/code/Magento/Paypal/Test/Mftf/Test/AdminEnablePaypalExpressCheckoutAndValida
 app/code/Magento/Paypal/Test/Mftf/Test/StorefrontPaypalSmartButtonWithCADCurrencyTest.xml
 app/code/Magento/Paypal/Test/Mftf/Test/AdminCreatePartialRefundOrderPaidThroughPayPalSmartButtonTest.xml
 app/code/Magento/Paypal/Test/Mftf/Test/AdminPaypalExpressCheckoutWithAPICredentialsFromCheckoutPageTest.xml
+app/code/Magento/Paypal/Test/Mftf/Test/AdminVoidSalesOrderWithPaypalBillingAgreementTest.xml
 app/code/Magento/Paypal/Test/Mftf/Test/AdminTurnOffVenmoButtonTest.xml
 app/code/Magento/Paypal/Test/Mftf/Test/AdminCheckConfigurationForPayPalExpressCheckoutInUnitesStatesTest.xml
 app/code/Magento/Paypal/Test/Mftf/Test/VoidASalesOrderPlacedWithPayPalPaymentsProTest.xml
@@ -27492,6 +27601,21 @@ app/code/Magento/GraphQlResolverCache/Observer/InvalidateGraphQlResolverCacheObs
 app/code/Magento/GraphQlResolverCache/i18n/en_US.csv
 app/code/Magento/GraphQlResolverCache/composer.json
 app/code/Magento/GraphQlResolverCache/registration.php
+app/code/Magento/Stomp/etc/di.xml
+app/code/Magento/Stomp/etc/module.xml
+app/code/Magento/Stomp/Setup/ConnectionValidator.php
+app/code/Magento/Stomp/Setup/Recurring.php
+app/code/Magento/Stomp/Setup/ConfigOptionsList.php
+app/code/Magento/Stomp/README.md
+app/code/Magento/Stomp/Model/Publisher.php
+app/code/Magento/Stomp/Model/MassPublisher.php
+app/code/Magento/Stomp/Model/Bulk/Publisher.php
+app/code/Magento/Stomp/Model/Rpc/Publisher.php
+app/code/Magento/Stomp/Test/Unit/Setup/ConfigOptionsListTest.php
+app/code/Magento/Stomp/composer.json
+app/code/Magento/Stomp/LICENSE_AFL.txt
+app/code/Magento/Stomp/LICENSE.txt
+app/code/Magento/Stomp/registration.php
 app/code/Magento/InstantPurchase/PaymentMethodIntegration/PaymentAdditionalInformationProviderInterface.php
 app/code/Magento/InstantPurchase/PaymentMethodIntegration/PaymentTokenFormatterInterface.php
 app/code/Magento/InstantPurchase/PaymentMethodIntegration/IntegrationFactory.php
@@ -27680,6 +27804,7 @@ app/code/Magento/CustomerGraphQl/Model/Resolver/CacheKey/FactorProvider/Customer
 app/code/Magento/CustomerGraphQl/Model/Resolver/CacheKey/FactorProvider/IsLoggedIn.php
 app/code/Magento/CustomerGraphQl/Model/Resolver/CacheKey/FactorProvider/CurrentCustomerId.php
 app/code/Magento/CustomerGraphQl/Model/Resolver/CacheKey/FactorProvider/CustomerGroup.php
+app/code/Magento/CustomerGraphQl/Model/Resolver/CustomerAddressUid.php
 app/code/Magento/CustomerGraphQl/Model/Resolver/Cache/Customer/TagsStrategy.php
 app/code/Magento/CustomerGraphQl/Model/Resolver/Cache/Customer/Address/TagsStrategy.php
 app/code/Magento/CustomerGraphQl/Model/Resolver/Cache/Customer/ResolverCacheIdentity.php
@@ -27735,6 +27860,7 @@ app/code/Magento/ConfigurableImportExport/etc/di.xml
 app/code/Magento/ConfigurableImportExport/etc/module.xml
 app/code/Magento/ConfigurableImportExport/etc/export.xml
 app/code/Magento/ConfigurableImportExport/Plugin/Import/Product/UpdateConfigurableProductsStockItemStatusPlugin.php
+app/code/Magento/ConfigurableImportExport/README.md
 app/code/Magento/ConfigurableImportExport/Model/Import/Product/Type/Configurable.php
 app/code/Magento/ConfigurableImportExport/Model/Export/Product/Type/Configurable.php
 app/code/Magento/ConfigurableImportExport/Model/Export/RowCustomizer.php
@@ -28438,6 +28564,7 @@ app/code/Magento/Sitemap/etc/module.xml
 app/code/Magento/Sitemap/etc/config.xml
 app/code/Magento/Sitemap/etc/db_schema_whitelist.json
 app/code/Magento/Sitemap/etc/email_templates.xml
+app/code/Magento/Sitemap/Plugin/Cron/Model/Config/Backend/SitemapPlugin.php
 app/code/Magento/Sitemap/Controller/Adminhtml/Sitemap/Save.php
 app/code/Magento/Sitemap/Controller/Adminhtml/Sitemap/Index.php
 app/code/Magento/Sitemap/Controller/Adminhtml/Sitemap/Generate.php
@@ -28474,6 +28601,7 @@ app/code/Magento/Sitemap/Model/ItemProvider/ProductConfigReader.php
 app/code/Magento/Sitemap/Model/ItemProvider/Product.php
 app/code/Magento/Sitemap/Model/ItemProvider/CategoryConfigReader.php
 app/code/Magento/Sitemap/Model/Config/Source/Frequency.php
+app/code/Magento/Sitemap/Model/Config/Source/GenerationMethod.php
 app/code/Magento/Sitemap/Model/Config/Backend/Robots.php
 app/code/Magento/Sitemap/Model/Config/Backend/Priority.php
 app/code/Magento/Sitemap/Model/EmailNotification.php
@@ -28530,6 +28658,7 @@ app/code/Magento/Sitemap/Test/Unit/Model/_files/sitemap-1-2.xml
 app/code/Magento/Sitemap/Test/Unit/Model/_files/sitemap-index.xml
 app/code/Magento/Sitemap/Test/Unit/Model/_files/sitemap-1-3.xml
 app/code/Magento/Sitemap/Test/Unit/Model/ResourceModel/Catalog/Batch/ProductTest.php
+app/code/Magento/Sitemap/Test/Unit/Model/ResourceModel/Catalog/ProductTest.php
 app/code/Magento/Sitemap/Test/Unit/Model/ResourceModel/Cms/PageTest.php
 app/code/Magento/Sitemap/Test/Unit/Model/ItemProvider/CompositeTest.php
 app/code/Magento/Sitemap/Test/Unit/Model/ItemProvider/Batch/ProductTest.php
@@ -30213,8 +30342,10 @@ app/code/Magento/Customer/Setup/Patch/Data/AddCustomerUpdatedAtAttribute.php
 app/code/Magento/Customer/Setup/Patch/Data/RemoveCheckoutRegisterAndUpdateAttributes.php
 app/code/Magento/Customer/Setup/Patch/Data/ConvertValidationRulesFromSerializedToJson.php
 app/code/Magento/Customer/Plugin/AsyncRequestCustomerGroupAuthorization.php
+app/code/Magento/Customer/Plugin/Model/VatPlugin.php
 app/code/Magento/Customer/Plugin/Model/SessionPlugin.php
 app/code/Magento/Customer/Plugin/Model/Group/RetrieverPlugin.php
+app/code/Magento/Customer/Plugin/ValidateDobOnSave.php
 app/code/Magento/Customer/Controller/Section/Load.php
 app/code/Magento/Customer/Controller/Address/File/Upload.php
 app/code/Magento/Customer/Controller/Address/Form.php
@@ -30477,6 +30608,7 @@ app/code/Magento/Customer/Model/Data/Option.php
 app/code/Magento/Customer/Model/Data/ValidationRule.php
 app/code/Magento/Customer/Model/Data/Address.php
 app/code/Magento/Customer/Model/Account/Redirect.php
+app/code/Magento/Customer/Model/VatValidationResultStorage.php
 app/code/Magento/Customer/Model/AddressRegistry.php
 app/code/Magento/Customer/Model/StoreSwitcher/RedirectDataPostprocessor.php
 app/code/Magento/Customer/Model/StoreSwitcher/RedirectDataPreprocessor.php
@@ -31161,6 +31293,7 @@ app/code/Magento/Customer/Test/Mftf/Page/AdminCustomerConfigPage.xml
 app/code/Magento/Customer/Test/Mftf/Page/StorefrontCustomerStoredPaymentMethodsPage.xml
 app/code/Magento/Customer/Test/Mftf/LICENSE.txt
 app/code/Magento/Customer/Test/Unit/Setup/RecurringDataTest.php
+app/code/Magento/Customer/Test/Unit/Plugin/ValidateDobOnSaveTest.php
 app/code/Magento/Customer/Test/Unit/Plugin/Model/SessionPluginTest.php
 app/code/Magento/Customer/Test/Unit/Plugin/Model/Group/RetrieverPluginTest.php
 app/code/Magento/Customer/Test/Unit/Plugin/AsyncRequestCustomerGroupAuthorizationTest.php
@@ -31734,6 +31867,7 @@ app/code/Magento/ProductAlert/etc/db_schema.xml
 app/code/Magento/ProductAlert/etc/crontab.xml
 app/code/Magento/ProductAlert/etc/adminhtml/system.xml
 app/code/Magento/ProductAlert/etc/di.xml
+app/code/Magento/ProductAlert/etc/queue_publisher.xml
 app/code/Magento/ProductAlert/etc/communication.xml
 app/code/Magento/ProductAlert/etc/queue_consumer.xml
 app/code/Magento/ProductAlert/etc/queue.xml
@@ -31843,9 +31977,12 @@ app/code/Magento/Reports/view/adminhtml/templates/report/wishlist.phtml
 app/code/Magento/Reports/view/adminhtml/templates/report/grid/container.phtml
 app/code/Magento/Reports/view/adminhtml/templates/report/refresh/statistics.phtml
 app/code/Magento/Reports/view/frontend/web/js/recently-viewed.js
+app/code/Magento/Reports/view/frontend/web/js/product-viewed.js
 app/code/Magento/Reports/view/frontend/layout/print.xml
 app/code/Magento/Reports/view/frontend/layout/default.xml
+app/code/Magento/Reports/view/frontend/layout/catalog_product_view.xml
 app/code/Magento/Reports/view/frontend/requirejs-config.js
+app/code/Magento/Reports/view/frontend/templates/product/report_viewed_product.phtml
 app/code/Magento/Reports/view/frontend/templates/product/widget/viewed.phtml
 app/code/Magento/Reports/view/frontend/templates/product/widget/viewed/item.phtml
 app/code/Magento/Reports/view/frontend/templates/widget/compared/column/compared_names_list.phtml
@@ -31868,6 +32005,7 @@ app/code/Magento/Reports/etc/webapi_soap/events.xml
 app/code/Magento/Reports/etc/di.xml
 app/code/Magento/Reports/etc/acl.xml
 app/code/Magento/Reports/etc/frontend/events.xml
+app/code/Magento/Reports/etc/frontend/routes.xml
 app/code/Magento/Reports/etc/webapi_rest/events.xml
 app/code/Magento/Reports/etc/module.xml
 app/code/Magento/Reports/etc/config.xml
@@ -31949,6 +32087,7 @@ app/code/Magento/Reports/Controller/Adminhtml/Report/Review/Customer.php
 app/code/Magento/Reports/Controller/Adminhtml/Report/Review/ProductDetail.php
 app/code/Magento/Reports/Controller/Adminhtml/Report/Review/ExportCustomerExcel.php
 app/code/Magento/Reports/Controller/Adminhtml/Report/Review.php
+app/code/Magento/Reports/Controller/Report/Product/View.php
 app/code/Magento/Reports/README.md
 app/code/Magento/Reports/Model/Config.php
 app/code/Magento/Reports/Model/Grouped/Collection.php
@@ -32283,6 +32422,7 @@ app/code/Magento/Csp/Test/Unit/Plugin/StoreAssetIntegrityHashesTest.php
 app/code/Magento/Csp/Test/Unit/Plugin/GenerateBundleAssetIntegrityTest.php
 app/code/Magento/Csp/Test/Unit/Plugin/AddDefaultPropertiesToGroupPluginTest.php
 app/code/Magento/Csp/Test/Unit/Plugin/GenerateMergedAssetIntegrityTest.php
+app/code/Magento/Csp/Test/Unit/Plugin/GenerateAssetIntegrityTest.php
 app/code/Magento/Csp/Test/Unit/Model/PolicyRendererPoolTest.php
 app/code/Magento/Csp/Test/Unit/Model/SubresourceIntegrityRepositoryTest.php
 app/code/Magento/Csp/Test/Unit/Model/SubresourceIntegrityCollectorTest.php
@@ -32695,6 +32835,7 @@ app/code/Magento/SalesRule/Test/Mftf/Test/StoreFrontVerifyCartPriceRuleWithMaxim
 app/code/Magento/SalesRule/Test/Mftf/Test/AdminBlockCouponGeneratesUntilCartPriceRuleSavedWithSpecificCouponTypeAndAutoGenerationTickedTest.xml
 app/code/Magento/SalesRule/Test/Mftf/Test/StorefrontCartPriceRuleCountryTest.xml
 app/code/Magento/SalesRule/Test/Mftf/Test/StorefrontCartPriceRuleOverCategoryAndQuantityTest.xml
+app/code/Magento/SalesRule/Test/Mftf/Test/StorefrontCartPriceRuleAutoAndCouponTest.xml
 app/code/Magento/SalesRule/Test/Mftf/Test/StorefrontCartPriceRuleQuantityTest.xml
 app/code/Magento/SalesRule/Test/Mftf/Test/PriceRuleCategoryNestingTest.xml
 app/code/Magento/SalesRule/Test/Mftf/Test/EndToEndB2CLoggedInUserTest.xml
@@ -33289,6 +33430,7 @@ app/code/Magento/Backend/Model/Widget/Grid/Row/UrlGenerator.php
 app/code/Magento/Backend/Model/Widget/Grid/Row/UrlGeneratorFactory.php
 app/code/Magento/Backend/Model/Widget/Grid/Row/GeneratorInterface.php
 app/code/Magento/Backend/Model/Config/SessionLifetime/BackendModel.php
+app/code/Magento/Backend/Model/Config/Password/MinimumLength.php
 app/code/Magento/Backend/Model/AdminPathConfig.php
 app/code/Magento/Backend/Model/Authorization/RoleLocator.php
 app/code/Magento/Backend/Model/UrlInterface.php
@@ -33850,17 +33992,6 @@ app/code/Magento/EncryptionKey/Console/Command/ListReEncryptorsCommand.php
 app/code/Magento/EncryptionKey/Console/Command/UpdateEncryptionKeyCommand.php
 app/code/Magento/EncryptionKey/Console/Command/ReEncryptDataCommand.php
 app/code/Magento/EncryptionKey/i18n/en_US.csv
-app/code/Magento/EncryptionKey/Test/Mftf/Section/AdminEncryptionKeyChangeFormSection.xml
-app/code/Magento/EncryptionKey/Test/Mftf/README.md
-app/code/Magento/EncryptionKey/Test/Mftf/ActionGroup/AdminEncryptionKeyChangeKeyManualActionGroup.xml
-app/code/Magento/EncryptionKey/Test/Mftf/ActionGroup/AdminEncryptionKeyChangeKeyAutoActionGroup.xml
-app/code/Magento/EncryptionKey/Test/Mftf/ActionGroup/AdminEncryptionKeyNavigateToChangePageActionGroup.xml
-app/code/Magento/EncryptionKey/Test/Mftf/Data/AdminEncryptionKeyData.xml
-app/code/Magento/EncryptionKey/Test/Mftf/Test/AdminEncryptionKeyAutoGenerateKeyTest.xml
-app/code/Magento/EncryptionKey/Test/Mftf/Test/AdminEncryptionKeyManualGenerateKeyTest.xml
-app/code/Magento/EncryptionKey/Test/Mftf/LICENSE_AFL.txt
-app/code/Magento/EncryptionKey/Test/Mftf/Page/AdminEncryptionKeyChangeFormPage.xml
-app/code/Magento/EncryptionKey/Test/Mftf/LICENSE.txt
 app/code/Magento/EncryptionKey/Test/Unit/Model/ResourceModel/Key/ChangeTest.php
 app/code/Magento/EncryptionKey/Test/Unit/Console/Command/ReEncryptDataCommandTest.php
 app/code/Magento/EncryptionKey/Test/Unit/Console/Command/ListReEncryptorsCommandTest.php
@@ -34092,10 +34223,13 @@ app/code/Magento/CatalogInventory/Test/Mftf/ActionGroup/AdminProductSetMaxQtyAll
 app/code/Magento/CatalogInventory/Test/Mftf/ActionGroup/AdminProductMaxQtyAllowedInShoppingCartValidationActionGroup.xml
 app/code/Magento/CatalogInventory/Test/Mftf/ActionGroup/StorefrontAssertProductsInCategoryPageAsPerSetPositionInBackendActionGroup.xml
 app/code/Magento/CatalogInventory/Test/Mftf/ActionGroup/AdminCatalogInventoryConfigurationMaxQtyAllowedInShoppingCartValidationActionGroup.xml
+app/code/Magento/CatalogInventory/Test/Mftf/ActionGroup/AdminNavigateToProductStockOptionsFeatureActionGroup.xml
+app/code/Magento/CatalogInventory/Test/Mftf/ActionGroup/AdminInProductStockOptionsFeatureResetNotifyForQuantityBelowActionGroup.xml
 app/code/Magento/CatalogInventory/Test/Mftf/ActionGroup/AdminCatalogInventoryChangeManageStockActionGroup.xml
 app/code/Magento/CatalogInventory/Test/Mftf/ActionGroup/AdminCreateOptionsForAttributeMultiStockActionGroup.xml
 app/code/Magento/CatalogInventory/Test/Mftf/ActionGroup/AdminDynamicSortAssignProductsToFirstAndLastPositionActionGroup.xml
 app/code/Magento/CatalogInventory/Test/Mftf/ActionGroup/DisplayOutOfStockProductActionGroup.xml
+app/code/Magento/CatalogInventory/Test/Mftf/ActionGroup/AdminInProductStockOptionsFeatureSetNotifyForQuantityBelowActionGroup.xml
 app/code/Magento/CatalogInventory/Test/Mftf/ActionGroup/AdminCreateCreditMemoWithReturnToStockActionGroup.xml
 app/code/Magento/CatalogInventory/Test/Mftf/ActionGroup/AdminFillGoogleDistanceProviderAPIKeyActionGroup.xml
 app/code/Magento/CatalogInventory/Test/Mftf/class-file-naming-allowlist
@@ -35880,6 +36014,14 @@ lib/internal/Magento/Framework/Crontab/Test/Unit/TasksProviderTest.php
 lib/internal/Magento/Framework/Crontab/Test/Unit/CrontabManagerTest.php
 lib/internal/Magento/Framework/Crontab/CrontabManagerInterface.php
 lib/internal/Magento/Framework/Setup/BackendFrontnameGenerator.php
+lib/internal/Magento/Framework/Setup/Mvc/ModuleManagerFactory.php
+lib/internal/Magento/Framework/Setup/Mvc/ModuleManager.php
+lib/internal/Magento/Framework/Setup/Mvc/ServiceManagerFactory.php
+lib/internal/Magento/Framework/Setup/Mvc/MvcServiceManagerConfig.php
+lib/internal/Magento/Framework/Setup/Mvc/MvcEvent.php
+lib/internal/Magento/Framework/Setup/Mvc/ServiceLocatorInterface.php
+lib/internal/Magento/Framework/Setup/Mvc/MvcApplication.php
+lib/internal/Magento/Framework/Setup/Mvc/ServiceListenerFactory.php
 lib/internal/Magento/Framework/Setup/OldDbValidator.php
 lib/internal/Magento/Framework/Setup/UninstallInterface.php
 lib/internal/Magento/Framework/Setup/SchemaListenerHandlers/SchemaListenerHandlerInterface.php
@@ -36070,9 +36212,19 @@ lib/internal/Magento/Framework/Setup/Declaration/Schema/Dto/Factories/Primary.ph
 lib/internal/Magento/Framework/Setup/Declaration/Schema/Dto/Factories/Unique.php
 lib/internal/Magento/Framework/Setup/Declaration/Schema/Dto/Factories/MediumBlob.php
 lib/internal/Magento/Framework/Setup/Declaration/Schema/Dto/ElementDiffAwareInterface.php
+lib/internal/Magento/Framework/Setup/Test/Unit/Mvc/MvcApplicationTest.php
+lib/internal/Magento/Framework/Setup/Test/Unit/Mvc/MvcEventTest.php
+lib/internal/Magento/Framework/Setup/Test/Unit/Mvc/ServiceManagerFactoryTest.php
+lib/internal/Magento/Framework/Setup/Test/Unit/Mvc/MvcServiceManagerConfigTest.php
+lib/internal/Magento/Framework/Setup/Test/Unit/Mvc/ServiceListenerFactoryTest.php
+lib/internal/Magento/Framework/Setup/Test/Unit/Mvc/ModuleManagerFactoryTest.php
+lib/internal/Magento/Framework/Setup/Test/Unit/Mvc/ModuleManagerTest.php
 lib/internal/Magento/Framework/Setup/Test/Unit/BackupRollbackTest.php
 lib/internal/Magento/Framework/Setup/Test/Unit/_files/schema_patch_classes.php
 lib/internal/Magento/Framework/Setup/Test/Unit/_files/data_patch_classes.php
+lib/internal/Magento/Framework/Setup/Test/Unit/_files/FixtureModule.php
+lib/internal/Magento/Framework/Setup/Test/Unit/_files/TestModule.php
+lib/internal/Magento/Framework/Setup/Test/Unit/_files/TestBootstrapListener.php
 lib/internal/Magento/Framework/Setup/Test/Unit/Option/TextConfigOptionTest.php
 lib/internal/Magento/Framework/Setup/Test/Unit/Option/FlagConfigOptionTest.php
 lib/internal/Magento/Framework/Setup/Test/Unit/Option/SelectConfigOptionTest.php
@@ -37281,10 +37433,13 @@ lib/internal/Magento/Framework/DB/Select/QueryModifierFactory.php
 lib/internal/Magento/Framework/DB/Select/DistinctRenderer.php
 lib/internal/Magento/Framework/DB/FieldDataConversionException.php
 lib/internal/Magento/Framework/DB/QueryFactory.php
+lib/internal/Magento/Framework/DB/Logger/QueryAnalyzerInterface.php
 lib/internal/Magento/Framework/DB/Logger/Quiet.php
 lib/internal/Magento/Framework/DB/Logger/LoggerProxy.php
 lib/internal/Magento/Framework/DB/Logger/File.php
+lib/internal/Magento/Framework/DB/Logger/QueryIndexAnalyzer.php
 lib/internal/Magento/Framework/DB/Logger/LoggerAbstract.php
+lib/internal/Magento/Framework/DB/Logger/QueryAnalyzerException.php
 lib/internal/Magento/Framework/DB/Tree/NodeSet.php
 lib/internal/Magento/Framework/DB/Tree/Node.php
 lib/internal/Magento/Framework/DB/Select.php
@@ -37328,6 +37483,7 @@ lib/internal/Magento/Framework/DB/Test/Unit/Select/LimitRendererTest.php
 lib/internal/Magento/Framework/DB/Test/Unit/Select/HavingRendererTest.php
 lib/internal/Magento/Framework/DB/Test/Unit/Select/GroupRendererTest.php
 lib/internal/Magento/Framework/DB/Test/Unit/ProfilerTest.php
+lib/internal/Magento/Framework/DB/Test/Unit/Logger/QueryIndexAnalyzerTest.php
 lib/internal/Magento/Framework/DB/Test/Unit/Logger/FileTest.php
 lib/internal/Magento/Framework/DB/Test/Unit/Sql/UnionExpressionTest.php
 lib/internal/Magento/Framework/DB/Test/Unit/Sql/LimitExpressionTest.php
@@ -38330,6 +38486,10 @@ lib/internal/Magento/Framework/MessageQueue/Bulk/Publisher.php
 lib/internal/Magento/Framework/MessageQueue/Bulk/ExchangeRepository.php
 lib/internal/Magento/Framework/MessageQueue/Bulk/Rpc/Publisher.php
 lib/internal/Magento/Framework/MessageQueue/Bulk/ExchangeFactory.php
+lib/internal/Magento/Framework/MessageQueue/Bulk/Queue/QueueFactoryInterface.php
+lib/internal/Magento/Framework/MessageQueue/Bulk/Queue/QueueFactory.php
+lib/internal/Magento/Framework/MessageQueue/Bulk/Queue/QueueRepository.php
+lib/internal/Magento/Framework/MessageQueue/Bulk/Queue/QueueInterface.php
 lib/internal/Magento/Framework/MessageQueue/Bulk/ExchangeInterface.php
 lib/internal/Magento/Framework/MessageQueue/Bulk/ExchangeFactoryInterface.php
 lib/internal/Magento/Framework/MessageQueue/Rpc/Publisher.php
@@ -38599,6 +38759,7 @@ lib/internal/Magento/Framework/Api/Code/Generator/ExtensionAttributesInterfaceFa
 lib/internal/Magento/Framework/Api/AttributeTypeResolverInterface.php
 lib/internal/Magento/Framework/Api/ImageProcessorInterface.php
 lib/internal/Magento/Framework/Api/AttributeInterface.php
+lib/internal/Magento/Framework/Api/ImageContentUploaderInterface.php
 lib/internal/Magento/Framework/Api/MetadataServiceInterface.php
 lib/internal/Magento/Framework/Api/ImageContent.php
 lib/internal/Magento/Framework/Api/SearchCriteriaInterface.php
@@ -38714,7 +38875,9 @@ lib/internal/Magento/Framework/GraphQl/Query/Fields.php
 lib/internal/Magento/Framework/GraphQl/Query/EnumLookup.php
 lib/internal/Magento/Framework/GraphQl/Query/FieldTranslator.php
 lib/internal/Magento/Framework/GraphQl/Query/Promise.php
+lib/internal/Magento/Framework/GraphQl/Query/QueryResponseFormatterInterface.php
 lib/internal/Magento/Framework/GraphQl/Query/ErrorHandlerInterface.php
+lib/internal/Magento/Framework/GraphQl/Query/QueryDataFormatter.php
 lib/internal/Magento/Framework/GraphQl/Query/PostFetchProcessorInterface.php
 lib/internal/Magento/Framework/GraphQl/Query/MaximumAliasConfiguration.php
 lib/internal/Magento/Framework/GraphQl/Query/IntrospectionConfiguration.php
@@ -38806,11 +38969,15 @@ lib/internal/Magento/Framework/GraphQl/Schema/Type/InputTypeInterface.php
 lib/internal/Magento/Framework/GraphQl/Schema/Type/ListOfType.php
 lib/internal/Magento/Framework/GraphQl/Exception/ExceptionFormatter.php
 lib/internal/Magento/Framework/GraphQl/Exception/GraphQlInputException.php
+lib/internal/Magento/Framework/GraphQl/Exception/InvalidRequestInterface.php
+lib/internal/Magento/Framework/GraphQl/Exception/UnsupportedMediaTypeException.php
 lib/internal/Magento/Framework/GraphQl/Exception/GraphQlAuthorizationException.php
 lib/internal/Magento/Framework/GraphQl/Exception/GraphQlAuthenticationException.php
+lib/internal/Magento/Framework/GraphQl/Exception/MethodNotAllowedException.php
 lib/internal/Magento/Framework/GraphQl/Exception/GraphQlAlreadyExistsException.php
 lib/internal/Magento/Framework/GraphQl/Exception/GraphQlNoSuchEntityException.php
 lib/internal/Magento/Framework/GraphQl/Schema.php
+lib/internal/Magento/Framework/GraphQl/Test/Unit/Query/QueryDataFormatterTest.php
 lib/internal/Magento/Framework/GraphQl/Test/Unit/Query/EnumLookupTest.php
 lib/internal/Magento/Framework/GraphQl/Test/Unit/Query/FieldsTest.php
 lib/internal/Magento/Framework/GraphQl/Test/Unit/Query/Resolver/PromiseFactoryTest.php
@@ -39011,6 +39178,31 @@ lib/internal/Magento/Framework/TestFramework/Unit/Helper/ProxyTesting.php
 lib/internal/Magento/Framework/TestFramework/Unit/Helper/ProxyClassGenerator.php
 lib/internal/Magento/Framework/TestFramework/Unit/Helper/SelectRendererTrait.php
 lib/internal/Magento/Framework/TestFramework/Unit/Helper/ObjectManager.php
+lib/internal/Magento/Framework/Stomp/Diagnostics.php
+lib/internal/Magento/Framework/Stomp/StompClientFactory.php
+lib/internal/Magento/Framework/Stomp/Config.php
+lib/internal/Magento/Framework/Stomp/ConnectionTypeResolver.php
+lib/internal/Magento/Framework/Stomp/QueueFactory.php
+lib/internal/Magento/Framework/Stomp/README.md
+lib/internal/Magento/Framework/Stomp/StompClientInterface.php
+lib/internal/Magento/Framework/Stomp/Queue.php
+lib/internal/Magento/Framework/Stomp/TopologyInstaller.php
+lib/internal/Magento/Framework/Stomp/Bulk/Queue.php
+lib/internal/Magento/Framework/Stomp/StompClient.php
+lib/internal/Magento/Framework/Stomp/Connection/FactoryOptions.php
+lib/internal/Magento/Framework/Stomp/Connection/Factory.php
+lib/internal/Magento/Framework/Stomp/ConfigPool.php
+lib/internal/Magento/Framework/Stomp/Test/Unit/ConnectionTypeResolverTest.php
+lib/internal/Magento/Framework/Stomp/Test/Unit/Bulk/QueueTest.php
+lib/internal/Magento/Framework/Stomp/Test/Unit/ConfigPoolTest.php
+lib/internal/Magento/Framework/Stomp/Test/Unit/Connection/FactoryTest.php
+lib/internal/Magento/Framework/Stomp/Test/Unit/ConfigTest.php
+lib/internal/Magento/Framework/Stomp/Test/Unit/Topology/QueueInstallerTest.php
+lib/internal/Magento/Framework/Stomp/Test/Unit/TopologyInstallerTest.php
+lib/internal/Magento/Framework/Stomp/composer.json
+lib/internal/Magento/Framework/Stomp/ConfigFactory.php
+lib/internal/Magento/Framework/Stomp/Topology/QueueInstaller.php
+lib/internal/Magento/Framework/Stomp/registration.php
 lib/internal/Magento/Framework/Data/DataArray.php
 lib/internal/Magento/Framework/Data/Structure.php
 lib/internal/Magento/Framework/Data/Form.php
@@ -39339,6 +39531,7 @@ lib/internal/Magento/Framework/Test/Unit/FlagTest.php
 lib/internal/Magento/Framework/Test/Unit/Locale/LocaleFormatterTest.php
 lib/internal/Magento/Framework/Test/Unit/App/Scope/SourceTest.php
 lib/internal/Magento/Framework/Test/Unit/App/ResourceConnectionTest.php
+lib/internal/Magento/Framework/Test/Unit/App/BootstrapTest.php
 lib/internal/Magento/Framework/Test/Unit/ArchiveTest.php
 lib/internal/Magento/Framework/Test/Unit/DB/Query/BatchRangeIteratorTest.php
 lib/internal/Magento/Framework/Test/Unit/DB/Query/BatchIteratorTest.php

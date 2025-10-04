@@ -1099,7 +1099,14 @@ wp-includes/SimplePie/src/Cache/NameFilter.php
 wp-includes/SimplePie/src/Cache/CallableNameFilter.php
 wp-includes/SimplePie/src/Registry.php
 wp-includes/SimplePie/src/Parser.php
+wp-includes/SimplePie/src/HTTP/RawTextResponse.php
+wp-includes/SimplePie/src/HTTP/FileClient.php
 wp-includes/SimplePie/src/HTTP/Parser.php
+wp-includes/SimplePie/src/HTTP/ClientException.php
+wp-includes/SimplePie/src/HTTP/Response.php
+wp-includes/SimplePie/src/HTTP/Psr7Response.php
+wp-includes/SimplePie/src/HTTP/Psr18Client.php
+wp-includes/SimplePie/src/HTTP/Client.php
 wp-includes/SimplePie/src/Item.php
 wp-includes/SimplePie/src/Locator.php
 wp-includes/SimplePie/src/SimplePie.php
@@ -1295,6 +1302,7 @@ wp-includes/category.php
 wp-includes/capabilities.php
 wp-includes/functions.wp-styles.php
 wp-includes/class-walker-comment.php
+wp-includes/utf8.php
 wp-includes/class-wp-site-query.php
 wp-includes/style-engine.php
 wp-includes/class-wp-classic-to-block-menu-converter.php
@@ -1410,6 +1418,7 @@ wp-includes/class-wp-customize-nav-menus.php
 wp-includes/class-wp-block-type.php
 wp-includes/rewrite.php
 wp-includes/class-wp-customize-manager.php
+wp-includes/compat-utf8.php
 wp-includes/class-phpmailer.php
 wp-includes/registration.php
 wp-includes/speculative-loading.php
@@ -2824,7 +2833,7 @@ wp-content/themes/twentysixteen/search.php
 wp-content/themes/twentysixteen/searchform.php
 wp-content/themes/twentysixteen/index.php
 wp-content/themes/twentysixteen/image.php
-wp-content/plugins/hello.php
+wp-content/plugins/hello-dolly/hello.php
 wp-content/plugins/index.php
 wp-content/index.php
 wp-config-sample.php

@@ -229,6 +229,7 @@ src/Sylius/Component/Core/Statistics/Registry/OrdersCountProviderRegistry.php
 src/Sylius/Component/Core/Shipping/Checker/Rule/OrderTotalLessThanOrEqualRuleChecker.php
 src/Sylius/Component/Core/Shipping/Checker/Rule/OrderTotalRuleChecker.php
 src/Sylius/Component/Core/Shipping/Checker/Rule/OrderTotalGreaterThanOrEqualRuleChecker.php
+src/Sylius/Component/Core/Shipping/Checker/Eligibility/ZoneEligibilityChecker.php
 src/Sylius/Component/Core/Shipping/Calculator/FlatRateCalculator.php
 src/Sylius/Component/Core/Shipping/Calculator/PerUnitRateCalculator.php
 src/Sylius/Component/Core/Cart/Modifier/LimitingOrderItemQuantityModifier.php
@@ -1549,6 +1550,8 @@ src/Sylius/Behat/Context/Domain/ManagingPriceHistoryContext.php
 src/Sylius/Behat/Context/Domain/ManagingProductsContext.php
 src/Sylius/Behat/Context/Api/Resources.php
 src/Sylius/Behat/Context/Api/Subresources.php
+src/Sylius/Behat/Context/Api/DebugContext.php
+src/Sylius/Behat/Context/Api/DebugErrorType.php
 src/Sylius/Behat/Context/Api/Common/ResponseContext.php
 src/Sylius/Behat/Context/Api/Common/SaveContext.php
 src/Sylius/Behat/Context/Api/Shop/OrderContext.php
@@ -2816,6 +2819,7 @@ src/Sylius/Bundle/CoreBundle/Doctrine/Migrations/MigrationSkipInterface.php
 src/Sylius/Bundle/CoreBundle/Doctrine/Migrations/AbstractPostgreSQLMigration.php
 src/Sylius/Bundle/CoreBundle/Doctrine/Migrations/AbstractMigration.php
 src/Sylius/Bundle/CoreBundle/Doctrine/DQL/Year.php
+src/Sylius/Bundle/CoreBundle/Doctrine/DQL/Cast.php
 src/Sylius/Bundle/CoreBundle/Doctrine/DQL/Week.php
 src/Sylius/Bundle/CoreBundle/Doctrine/DQL/Hour.php
 src/Sylius/Bundle/CoreBundle/Doctrine/DQL/Day.php
@@ -3657,6 +3661,7 @@ src/Sylius/Bundle/AdminBundle/Resources/config/app/twig_hooks/taxon/create.yaml
 src/Sylius/Bundle/AdminBundle/Resources/config/app/twig_hooks/taxon/update.yaml
 src/Sylius/Bundle/AdminBundle/Resources/config/app/twig_hooks/shipping_method/create.yaml
 src/Sylius/Bundle/AdminBundle/Resources/config/app/twig_hooks/shipping_method/update.yaml
+src/Sylius/Bundle/AdminBundle/Resources/config/app/twig_hooks/customer/order/index.yaml
 src/Sylius/Bundle/AdminBundle/Resources/config/app/twig_hooks/customer/create.yaml
 src/Sylius/Bundle/AdminBundle/Resources/config/app/twig_hooks/customer/update.yaml
 src/Sylius/Bundle/AdminBundle/Resources/config/app/twig_hooks/customer/show.yaml
@@ -4685,6 +4690,8 @@ src/Sylius/Bundle/AdminBundle/templates/shipping_method/form/configuration/chann
 src/Sylius/Bundle/AdminBundle/templates/shipping_method/form/translations.html.twig
 src/Sylius/Bundle/AdminBundle/templates/shipping_method/form/configuration.html.twig
 src/Sylius/Bundle/AdminBundle/templates/shipping_method/form/general.html.twig
+src/Sylius/Bundle/AdminBundle/templates/customer/order/index/content/header/breadcrumbs.html.twig
+src/Sylius/Bundle/AdminBundle/templates/customer/order/index/content/header/title_block/title.html.twig
 src/Sylius/Bundle/AdminBundle/templates/customer/grid/field/enabled.html.twig
 src/Sylius/Bundle/AdminBundle/templates/customer/show/component/order_statistics.html.twig
 src/Sylius/Bundle/AdminBundle/templates/customer/show/content/header/title_block/actions/impersonate.html.twig
@@ -6053,9 +6060,9 @@ src/Sylius/Bundle/PayumBundle/Form/Extension/CryptedGatewayConfigTypeExtension.p
 src/Sylius/Bundle/PayumBundle/Form/Extension/PayumGatewayConfigTypeExtension.php
 src/Sylius/Bundle/PayumBundle/composer.json
 src/Sylius/Bundle/UiBundle/Menu/Event/MenuBuilderEvent.php
-src/Sylius/Bundle/UiBundle/Resources/private/sass/main.scss
-src/Sylius/Bundle/UiBundle/Resources/private/sass/_variables.scss
-src/Sylius/Bundle/UiBundle/Resources/private/sass/_filters.scss
+src/Sylius/Bundle/UiBundle/Resources/public/sass/main.scss
+src/Sylius/Bundle/UiBundle/Resources/public/sass/_variables.scss
+src/Sylius/Bundle/UiBundle/Resources/public/sass/_filters.scss
 src/Sylius/Bundle/UiBundle/Resources/config/services.xml
 src/Sylius/Bundle/UiBundle/Resources/config/services/twig.xml
 src/Sylius/Bundle/UiBundle/Resources/config/services/controller.xml
@@ -6414,6 +6421,7 @@ src/Sylius/Bundle/ShopBundle/Resources/assets/styles/_flags.scss
 src/Sylius/Bundle/ShopBundle/Resources/assets/styles/_checkout.scss
 src/Sylius/Bundle/ShopBundle/Resources/assets/controllers/.gitkeep
 src/Sylius/Bundle/ShopBundle/Resources/assets/controllers/ApiLoginController.js
+src/Sylius/Bundle/ShopBundle/Resources/assets/controllers/ProductShowImagesController.js
 src/Sylius/Bundle/ShopBundle/Resources/assets/icons/bag.svg
 src/Sylius/Bundle/ShopBundle/Resources/assets/package.json
 src/Sylius/Bundle/ShopBundle/Resources/assets/entrypoint.js
@@ -6460,6 +6468,9 @@ src/Sylius/Bundle/ShopBundle/Resources/config/routing/account/order.yml
 src/Sylius/Bundle/ShopBundle/Resources/config/routing/account/address_book.yml
 src/Sylius/Bundle/ShopBundle/Resources/config/app/sylius/sylius_mailer.yml
 src/Sylius/Bundle/ShopBundle/Resources/config/app/config.yml
+src/Sylius/Bundle/ShopBundle/Resources/config/app/integration/twig_hooks.php
+src/Sylius/Bundle/ShopBundle/Resources/config/app/integration/twig_hooks/sylius_admin/channel/create.yaml
+src/Sylius/Bundle/ShopBundle/Resources/config/app/integration/twig_hooks/sylius_admin/channel/update.yaml
 src/Sylius/Bundle/ShopBundle/Resources/config/app/twig_hooks/contact/contact_request.yaml
 src/Sylius/Bundle/ShopBundle/Resources/config/app/twig_hooks/order/thank_you.yaml
 src/Sylius/Bundle/ShopBundle/Resources/config/app/twig_hooks/order/show.yaml
@@ -6645,6 +6656,7 @@ src/Sylius/Bundle/ShopBundle/templates/contact/contact_request/content/form/emai
 src/Sylius/Bundle/ShopBundle/templates/contact/contact_request/content/form/message.html.twig
 src/Sylius/Bundle/ShopBundle/templates/contact/contact_request/content/form/submit.html.twig
 src/Sylius/Bundle/ShopBundle/templates/contact/contact_request.html.twig
+src/Sylius/Bundle/ShopBundle/templates/integrations/sylius_admin/channel/form/sections/look_and_feel/theme.html.twig
 src/Sylius/Bundle/ShopBundle/templates/email/password_reset.html.twig
 src/Sylius/Bundle/ShopBundle/templates/email/layout.html.twig
 src/Sylius/Bundle/ShopBundle/templates/email/verification.html.twig
@@ -10043,6 +10055,7 @@ tests/DataFixtures/ORM/resources/shipping_methods.yml
 tests/DataFixtures/ORM/resources/checkout_promotion.yml
 tests/Controller/XFrameOptionsTest.php
 tests/Model/OrderAdjustmentsRecalculationTest.php
+tests/Checker/Eligibility/ZoneEligibilityCheckerTest.php
 tests/Api/DataFixtures/ORM/taxon_image.yaml
 tests/Api/DataFixtures/ORM/administrator.yaml
 tests/Api/DataFixtures/ORM/country.yaml
@@ -11243,6 +11256,7 @@ features/shop/checkout/shipping_order/returning_from_shipping_step_to_addressing
 features/shop/checkout/shipping_order/shipping_method_integrity_validation.feature
 features/shop/checkout/shipping_order/seeing_shipping_method_when_at_least_one_unit_match_to_shipping_method.feature
 features/shop/checkout/shipping_order/seeing_shipping_method_when_all_units_match_to_shipping_category.feature
+features/shop/checkout/shipping_order/preventing_placing_order_with_address_not_in_shipping_method_zone.feature
 features/shop/checkout/shipping_order/preventing_shipping_step_completion_without_a_selected_method.feature
 features/shop/checkout/shipping_order/seeing_shipping_method_when_no_units_match_to_shipping_category.feature
 features/shop/checkout/shipping_order/sorting_shipping_method_selection.feature

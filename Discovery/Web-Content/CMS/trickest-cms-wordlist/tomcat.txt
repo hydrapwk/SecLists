@@ -964,8 +964,11 @@ java/org/apache/tomcat/util/openssl/SSL_set_verify$callback.java
 java/org/apache/tomcat/util/openssl/openssl_h_Compatibility.java
 java/org/apache/tomcat/util/openssl/SSL_CTX_set_verify$callback.java
 java/org/apache/tomcat/util/openssl/SSL_CTX_set_cert_verify_callback$cb.java
+java/org/apache/tomcat/util/concurrent/KeyedReentrantReadWriteLock.java
+java/org/apache/tomcat/util/concurrent/LocalStrings.properties
 java/org/apache/tomcat/util/LocalStrings_pt_BR.properties
 java/org/apache/tomcat/util/http/Parameters.java
+java/org/apache/tomcat/util/http/Method.java
 java/org/apache/tomcat/util/http/LocalStrings_de.properties
 java/org/apache/tomcat/util/http/HeaderUtil.java
 java/org/apache/tomcat/util/http/LocalStrings_cs.properties
@@ -1177,10 +1180,12 @@ java/org/apache/tomcat/util/net/openssl/ciphers/LocalStrings_de.properties
 java/org/apache/tomcat/util/net/openssl/ciphers/Encryption.java
 java/org/apache/tomcat/util/net/openssl/ciphers/Authentication.java
 java/org/apache/tomcat/util/net/openssl/ciphers/OpenSSLCipherConfigurationParser.java
+java/org/apache/tomcat/util/net/openssl/ciphers/Group.java
 java/org/apache/tomcat/util/net/openssl/ciphers/LocalStrings_es.properties
 java/org/apache/tomcat/util/net/openssl/ciphers/LocalStrings_fr.properties
 java/org/apache/tomcat/util/net/openssl/ciphers/LocalStrings_ja.properties
 java/org/apache/tomcat/util/net/openssl/ciphers/LocalStrings_zh_CN.properties
+java/org/apache/tomcat/util/net/openssl/ciphers/SignatureScheme.java
 java/org/apache/tomcat/util/net/openssl/ciphers/LocalStrings.properties
 java/org/apache/tomcat/util/net/openssl/ciphers/LocalStrings_ko.properties
 java/org/apache/tomcat/util/net/openssl/ciphers/EncryptionLevel.java
@@ -2311,6 +2316,7 @@ java/org/apache/catalina/tribes/util/LocalStrings_pt_BR.properties
 java/org/apache/catalina/tribes/util/LocalStrings.properties
 java/org/apache/catalina/tribes/util/LocalStrings_ko.properties
 java/org/apache/catalina/tribes/util/Logs.java
+java/org/apache/catalina/tribes/util/LocalStrings_ru.properties
 java/org/apache/catalina/tribes/ByteMessage.java
 java/org/apache/catalina/tribes/ChannelException.java
 java/org/apache/catalina/tribes/MembershipListener.java
@@ -2406,6 +2412,7 @@ java/org/apache/catalina/tribes/jmx/LocalStrings_ja.properties
 java/org/apache/catalina/tribes/jmx/LocalStrings_zh_CN.properties
 java/org/apache/catalina/tribes/jmx/LocalStrings.properties
 java/org/apache/catalina/tribes/jmx/LocalStrings_ko.properties
+java/org/apache/catalina/tribes/jmx/LocalStrings_ru.properties
 java/org/apache/catalina/tribes/transport/PooledSender.java
 java/org/apache/catalina/tribes/transport/LocalStrings_de.properties
 java/org/apache/catalina/tribes/transport/ReceiverBase.java
@@ -2651,6 +2658,7 @@ java/org/apache/catalina/mapper/Mapper.java
 java/org/apache/catalina/mapper/LocalStrings.properties
 java/org/apache/catalina/mapper/MappingData.java
 java/org/apache/catalina/mapper/LocalStrings_ko.properties
+java/org/apache/catalina/mapper/LocalStrings_ru.properties
 java/org/apache/catalina/mapper/MapperListener.java
 java/org/apache/catalina/mapper/mbeans-descriptors.xml
 java/org/apache/catalina/Valve.java
@@ -3074,6 +3082,7 @@ java/jakarta/servlet/jsp/JspWriter.java
 java/jakarta/servlet/jsp/JspPage.java
 java/jakarta/servlet/jsp/LocalStrings.properties
 java/jakarta/servlet/jsp/LocalStrings_ko.properties
+java/jakarta/servlet/jsp/LocalStrings_ru.properties
 java/jakarta/servlet/jsp/PageContext.java
 java/jakarta/servlet/ServletInputStream.java
 java/jakarta/servlet/http/LocalStrings_de.properties
@@ -3101,6 +3110,7 @@ java/jakarta/servlet/http/LocalStrings_ko.properties
 java/jakarta/servlet/http/HttpServletResponse.java
 java/jakarta/servlet/http/HttpSessionBindingListener.java
 java/jakarta/servlet/http/HttpSessionIdListener.java
+java/jakarta/servlet/http/LocalStrings_ru.properties
 java/jakarta/servlet/http/HttpSession.java
 java/jakarta/servlet/http/HttpServletResponseWrapper.java
 java/jakarta/servlet/http/HttpServlet.java
@@ -3360,6 +3370,7 @@ test/org/apache/naming/TestNamingContext.java
 test/org/apache/naming/TesterEnvEntry.java
 test/org/apache/naming/factory/TestBeanFactory.java
 test/org/apache/naming/factory/TesterBean.java
+test/org/apache/tomcat/security/TestSecurity2025Http2.java
 test/org/apache/tomcat/util/bcel/TesterPerformance.java
 test/org/apache/tomcat/util/security/TestEscape.java
 test/org/apache/tomcat/util/security/TestConcurrentMessageDigest.java
@@ -3376,6 +3387,7 @@ test/org/apache/tomcat/util/collections/TesterPerformanceSynchronizedQueue.java
 test/org/apache/tomcat/util/collections/TestCaseInsensitiveKeyMap.java
 test/org/apache/tomcat/util/collections/TesterPerformanceSynchronizedStack.java
 test/org/apache/tomcat/util/collections/TestConcurrentLruCache.java
+test/org/apache/tomcat/util/concurrent/TestKeyedReentrantReadWriteLock.java
 test/org/apache/tomcat/util/TestIntrospectionUtils.java
 test/org/apache/tomcat/util/http/TestCookieParsing.java
 test/org/apache/tomcat/util/http/TestHeaderUtiltoPrintableString.java
@@ -3385,8 +3397,10 @@ test/org/apache/tomcat/util/http/TestMimeHeaders.java
 test/org/apache/tomcat/util/http/TestConcurrentDateFormat.java
 test/org/apache/tomcat/util/http/TestRequestUtilSameOrigin.java
 test/org/apache/tomcat/util/http/TestRequestUtilNormalize.java
+test/org/apache/tomcat/util/http/TestMethodPerformance.java
 test/org/apache/tomcat/util/http/TestParameters.java
 test/org/apache/tomcat/util/http/TestCookieProcessorGeneration.java
+test/org/apache/tomcat/util/http/TestMethod.java
 test/org/apache/tomcat/util/http/TesterCookiesPerformance.java
 test/org/apache/tomcat/util/http/TesterFastHttpDateFormatPerformance.java
 test/org/apache/tomcat/util/http/parser/TestTokenList.java
@@ -3455,6 +3469,7 @@ test/org/apache/tomcat/util/net/TestXxxEndpoint.java
 test/org/apache/tomcat/util/net/localhost-rsa-copy1.jks
 test/org/apache/tomcat/util/net/localhost-rsa-key.pem
 test/org/apache/tomcat/util/net/localhost-rsa.jks
+test/org/apache/tomcat/util/net/TestKeyManagerWrappingFips.java
 test/org/apache/tomcat/util/net/openssl/TestOpenSSLConf.java
 test/org/apache/tomcat/util/net/openssl/ciphers/TesterOpenSSL.java
 test/org/apache/tomcat/util/net/openssl/ciphers/TestOpenSSLCipherConfigurationParser.java
@@ -3584,6 +3599,7 @@ test/org/apache/coyote/http2/TestStreamProcessor.java
 test/org/apache/coyote/http2/TestHttp2Section_6_8.java
 test/org/apache/coyote/http2/TestHpack.java
 test/org/apache/coyote/http2/TestHttp2InitialConnection.java
+test/org/apache/coyote/http2/TestStandardSessionIntegrationHttp2.java
 test/org/apache/coyote/http2/TestHttp2ConnectionTimeouts.java
 test/org/apache/coyote/http2/TestStream.java
 test/org/apache/coyote/http2/TesterHttp2Parser.java
@@ -3609,6 +3625,7 @@ test/org/apache/coyote/http11/filters/TestGzipOutputFilter.java
 test/org/apache/coyote/http11/filters/TesterOutputBuffer.java
 test/org/apache/coyote/http11/filters/TestChunkedInputFilter.java
 test/org/apache/coyote/http11/TestHttp11InputBufferCRLF.java
+test/org/apache/juli/TestPerWebappJuliIntegration.java
 test/org/apache/juli/TestFileHandlerNonRotatable.java
 test/org/apache/juli/TestClassLoaderLogManager.java
 test/org/apache/juli/TestDateFormatCache.java
@@ -3673,6 +3690,7 @@ test/org/apache/catalina/startup/HostConfigAutomaticDeploymentBaseTest.java
 test/org/apache/catalina/startup/TestHostConfigAutomaticDeploymentUnpackWAR.java
 test/org/apache/catalina/startup/TesterServletWithAnnotations.java
 test/org/apache/catalina/startup/TestHostConfigAutomaticDeploymentModification.java
+test/org/apache/catalina/startup/TestStrictServletComplianceAttributes.java
 test/org/apache/catalina/startup/SimpleHttpClient.java
 test/org/apache/catalina/startup/NoMappingParamServlet.java
 test/org/apache/catalina/startup/TestHostConfigAutomaticDeploymentDir.java
@@ -3696,6 +3714,7 @@ test/org/apache/catalina/startup/TestMultipartConfig.java
 test/org/apache/catalina/startup/TestHostConfigAutomaticDeploymentXmlExternalWarXml.java
 test/org/apache/catalina/startup/web-fragment-2ordering.xml
 test/org/apache/catalina/startup/TestHostConfigAutomaticDeploymentWarXml.java
+test/org/apache/catalina/startup/TestXmlValidationUsingContext.java
 test/org/apache/catalina/startup/EmbeddedTomcat.java
 test/org/apache/catalina/startup/TestHostConfigAutomaticDeploymentXml.java
 test/org/apache/catalina/startup/TesterMapRealm.java
@@ -3752,7 +3771,7 @@ test/org/apache/catalina/filters/TesterFilterConfigs.java
 test/org/apache/catalina/filters/TestRestCsrfPreventionFilter.java
 test/org/apache/catalina/session/TesterManager.java
 test/org/apache/catalina/session/TestPersistentManagerFileStore.java
-test/org/apache/catalina/session/TesterFileStoreConcurrency.java
+test/org/apache/catalina/session/TestFileStoreConcurrency.java
 test/org/apache/catalina/session/TestPersistentManagerIntegration.java
 test/org/apache/catalina/session/TestStandardSessionAccessor.java
 test/org/apache/catalina/session/FileStoreTest.java
@@ -4417,6 +4436,7 @@ test/webapp/jsp/generator/xml-prolog-tag.jspx
 test/webapp/jsp/generator/setters-01.jsp
 test/webapp/jsp/generator/templatetext-02.jsp
 test/webapp/jsp/generator/usebean-07.jsp
+test/webapp/jsp/generator/lambda.jsp
 test/webapp/jsp/generator/release.jsp
 test/webapp/jsp/generator/forward-04.jsp
 test/webapp/jsp/generator/usebean-08.jsp

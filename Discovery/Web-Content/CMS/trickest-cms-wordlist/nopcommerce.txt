@@ -72,6 +72,7 @@ src/Presentation/Nop.Web/Components/SocialButtonsViewComponent.cs
 src/Presentation/Nop.Web/Components/ProfilePostsViewComponent.cs
 src/Presentation/Nop.Web/Components/NewsRssHeaderLinkViewComponent.cs
 src/Presentation/Nop.Web/Components/CategoryNavigationViewComponent.cs
+src/Presentation/Nop.Web/Components/CompatibleWithFilterLevelValuesViewComponent.cs
 src/Presentation/Nop.Web/Components/HeaderLinksViewComponent.cs
 src/Presentation/Nop.Web/Components/PrivateMessagesSentItemsViewComponent.cs
 src/Presentation/Nop.Web/Components/ProfileInfoViewComponent.cs
@@ -83,6 +84,7 @@ src/Presentation/Nop.Web/Components/OrderSummaryViewComponent.cs
 src/Presentation/Nop.Web/Components/WidgetViewComponent.cs
 src/Presentation/Nop.Web/Components/ProductsAlsoPurchasedViewComponent.cs
 src/Presentation/Nop.Web/Components/HomepageBestSellersViewComponent.cs
+src/Presentation/Nop.Web/Components/FooterMenuViewComponent.cs
 src/Presentation/Nop.Web/Components/FlyoutShoppingCartViewComponent.cs
 src/Presentation/Nop.Web/Components/CurrencySelectorViewComponent.cs
 src/Presentation/Nop.Web/Components/HomepageProductsViewComponent.cs
@@ -97,6 +99,7 @@ src/Presentation/Nop.Web/Components/PopularProductTagsViewComponent.cs
 src/Presentation/Nop.Web/Components/HomepageNewsViewComponent.cs
 src/Presentation/Nop.Web/Components/SearchBoxViewComponent.cs
 src/Presentation/Nop.Web/Components/StoreThemeSelectorViewComponent.cs
+src/Presentation/Nop.Web/Components/FilterLevelValueSearchViewComponent.cs
 src/Presentation/Nop.Web/Components/SelectedCheckoutAttributesViewComponent.cs
 src/Presentation/Nop.Web/Components/CustomerNavigationViewComponent.cs
 src/Presentation/Nop.Web/Components/AdminHeaderLinksViewComponent.cs
@@ -105,8 +108,8 @@ src/Presentation/Nop.Web/Components/CheckoutProgressViewComponent.cs
 src/Presentation/Nop.Web/Components/CrossSellProductsViewComponent.cs
 src/Presentation/Nop.Web/Components/EuCookieLawViewComponent.cs
 src/Presentation/Nop.Web/Components/HomepagePollsViewComponent.cs
+src/Presentation/Nop.Web/Components/MainMenuViewComponent.cs
 src/Presentation/Nop.Web/Components/ManufacturerNavigationViewComponent.cs
-src/Presentation/Nop.Web/Components/TopMenuViewComponent.cs
 src/Presentation/Nop.Web/Components/RelatedProductsViewComponent.cs
 src/Presentation/Nop.Web/Components/VendorNavigationViewComponent.cs
 src/Presentation/Nop.Web/Components/HomepageCategoriesViewComponent.cs
@@ -190,8 +193,8 @@ src/Presentation/Nop.Web/Views/Shared/Components/TopicBlock/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/PopularProductTags/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/ShoppingCartEstimateShipping/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/CheckoutProgress/Default.cshtml
+src/Presentation/Nop.Web/Views/Shared/Components/FilterLevelValueSearch/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/PrivateMessagesSentItems/Default.cshtml
-src/Presentation/Nop.Web/Views/Shared/Components/TopMenu/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/TaxTypeSelector/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/HomepageBestSellers/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/ProductsAlsoPurchased/Default.cshtml
@@ -202,6 +205,8 @@ src/Presentation/Nop.Web/Views/Shared/Components/HeaderLinks/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/HomepagePolls/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/ExternalMethods/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/RelatedProducts/Default.cshtml
+src/Presentation/Nop.Web/Views/Shared/Components/FooterMenu/_FooterItem.cshtml
+src/Presentation/Nop.Web/Views/Shared/Components/FooterMenu/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/VendorNavigation/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/PrivateMessagesInbox/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/AdminHeaderLinks/Default.cshtml
@@ -216,8 +221,13 @@ src/Presentation/Nop.Web/Views/Shared/Components/Widget/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/EuCookieLaw/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/OrderTotals/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/StoreThemeSelector/Default.cshtml
+src/Presentation/Nop.Web/Views/Shared/Components/CompatibleWithFilterLevelValues/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/PollBlock/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/HomepageCategories/Default.cshtml
+src/Presentation/Nop.Web/Views/Shared/Components/MainMenu/_MenuItem.cshtml
+src/Presentation/Nop.Web/Views/Shared/Components/MainMenu/_MenuItem.Grid.cshtml
+src/Presentation/Nop.Web/Views/Shared/Components/MainMenu/_MenuItem.List.cshtml
+src/Presentation/Nop.Web/Views/Shared/Components/MainMenu/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/CategoryNavigation/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/NewsletterBox/Default.cshtml
 src/Presentation/Nop.Web/Views/Shared/Components/LanguageSelector/Default.cshtml
@@ -229,6 +239,7 @@ src/Presentation/Nop.Web/Views/Shared/_Notifications.cshtml
 src/Presentation/Nop.Web/Views/Shared/_CreateOrUpdateAddress.cshtml
 src/Presentation/Nop.Web/Views/Shared/_AddWishlistModal.cshtml
 src/Presentation/Nop.Web/Views/Shared/_ProductBox.cshtml
+src/Presentation/Nop.Web/Views/Shared/_OrderCustomValues.cshtml
 src/Presentation/Nop.Web/Views/Shared/_EstimateShippingPopUp.cshtml
 src/Presentation/Nop.Web/Views/Shared/_Print.cshtml
 src/Presentation/Nop.Web/Views/Shared/_ProductReviewHelpfulness.cshtml
@@ -252,6 +263,7 @@ src/Presentation/Nop.Web/Views/Catalog/VendorAll.cshtml
 src/Presentation/Nop.Web/Views/Catalog/_FilterSpecsBox.cshtml
 src/Presentation/Nop.Web/Views/Catalog/_FilterManufacturerBox.cshtml
 src/Presentation/Nop.Web/Views/Catalog/ManufacturerAll.cshtml
+src/Presentation/Nop.Web/Views/Catalog/SearchByFilterLevelValues.cshtml
 src/Presentation/Nop.Web/Views/Catalog/_CatalogProducts.cshtml
 src/Presentation/Nop.Web/Views/Catalog/VendorReviews.cshtml
 src/Presentation/Nop.Web/Views/Catalog/_CatalogFilters.cshtml
@@ -358,6 +370,7 @@ src/Presentation/Nop.Web/wwwroot/js/mdeditor/icons/heading.svg
 src/Presentation/Nop.Web/wwwroot/js/mdeditor/icons/italic.svg
 src/Presentation/Nop.Web/wwwroot/js/admin.navigation.js
 src/Presentation/Nop.Web/wwwroot/js/public.accordion.js
+src/Presentation/Nop.Web/wwwroot/js/public.filterlevelselect.js
 src/Presentation/Nop.Web/wwwroot/js/public.combinationsbehavior.js
 src/Presentation/Nop.Web/wwwroot/js/public.menu.js
 src/Presentation/Nop.Web/wwwroot/js/bbeditor/ed.js
@@ -369,6 +382,7 @@ src/Presentation/Nop.Web/wwwroot/js/public.catalogproducts.js
 src/Presentation/Nop.Web/wwwroot/js/admintour/admin.tour.common.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/jsrender/jsrender.min.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/jsrender/jsrender.min.js.map
+src/Presentation/Nop.Web/wwwroot/lib_npm/chart.js/chart.umd.min.js.map
 src/Presentation/Nop.Web/wwwroot/lib_npm/chart.js/chart.umd.js.min.map
 src/Presentation/Nop.Web/wwwroot/lib_npm/chart.js/chart.umd.min.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/filepond/filepond.min.js
@@ -769,7 +783,7 @@ src/Presentation/Nop.Web/wwwroot/lib_npm/summernote/lang/summernote-mn-MN.min.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/summernote/lang/summernote-es-ES.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/summernote/lang/summernote-el-GR.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/summernote/lang/summernote-pt-PT.js
-src/Presentation/Nop.Web/wwwroot/lib_npm/marked/marked.min.js
+src/Presentation/Nop.Web/wwwroot/lib_npm/marked/marked.umd.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/cldrjs/cldr/event.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/cldrjs/cldr/unresolved.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/cldrjs/cldr/supplemental.js
@@ -777,12 +791,8 @@ src/Presentation/Nop.Web/wwwroot/lib_npm/cldrjs/cldr.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/cldrjs/node_main.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2
 src/Presentation/Nop.Web/wwwroot/lib_npm/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2
-src/Presentation/Nop.Web/wwwroot/lib_npm/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.ttf
 src/Presentation/Nop.Web/wwwroot/lib_npm/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2
-src/Presentation/Nop.Web/wwwroot/lib_npm/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf
-src/Presentation/Nop.Web/wwwroot/lib_npm/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf
 src/Presentation/Nop.Web/wwwroot/lib_npm/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2
-src/Presentation/Nop.Web/wwwroot/lib_npm/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf
 src/Presentation/Nop.Web/wwwroot/lib_npm/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/jquery-validation/additional-methods.min.js
 src/Presentation/Nop.Web/wwwroot/lib_npm/jquery-validation/localization/methods_pt.min.js
@@ -968,9 +978,20 @@ src/Presentation/Nop.Web/Areas/Admin/Components/NopCommerceNewsViewComponent.cs
 src/Presentation/Nop.Web/Areas/Admin/Components/SettingModeViewComponent.cs
 src/Presentation/Nop.Web/Areas/Admin/Components/AclDisabledWarningViewComponent.cs
 src/Presentation/Nop.Web/Areas/Admin/Components/StoreScopeConfigurationViewComponent.cs
+src/Presentation/Nop.Web/Areas/Admin/Components/MetaTagGeneratorViewComponent.cs
 src/Presentation/Nop.Web/Areas/Admin/Components/AdminLanguageSelectorViewComponent.cs
 src/Presentation/Nop.Web/Areas/Admin/Components/CommonStatisticsViewComponent.cs
 src/Presentation/Nop.Web/Areas/Admin/Components/AdminWidgetViewComponent.cs
+src/Presentation/Nop.Web/Areas/Admin/Views/Menu/Edit.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/Menu/MenuItemEdit.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/Menu/_CreateOrUpdate.MenuItems.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/Menu/_MenuItemCreateOrUpdate.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/Menu/MenuItemSelectProductPopup.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/Menu/Create.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/Menu/List.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/Menu/_CreateOrUpdate.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/Menu/MenuItemCreate.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/Menu/_CreateOrUpdate.Info.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/ProductAttribute/Edit.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/ProductAttribute/PredefinedProductAttributeValueCreatePopup.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/ProductAttribute/PredefinedProductAttributeValueEditPopup.cshtml
@@ -993,6 +1014,7 @@ src/Presentation/Nop.Web/Areas/Admin/Views/ReturnRequest/_CreateOrUpdate.ReturnR
 src/Presentation/Nop.Web/Areas/Admin/Views/ReturnRequest/List.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/ReturnRequest/_CreateOrUpdate.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/Vendor.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/Setting/FilterLevel.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_AppSettings.Common.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_GeneralCommon.RobotsTxt.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_CustomerUser.AddressFormFields.cshtml
@@ -1017,6 +1039,7 @@ src/Presentation/Nop.Web/Areas/Admin/Views/Setting/AppSettings.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_Catalog.CompareProducts.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_CustomerUser.Profile.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_Tax.Common.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/Setting/EditFilterLevel.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/AllSettings.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_Catalog.Performance.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_CreateOrUpdateGdprConsent.cshtml
@@ -1028,12 +1051,12 @@ src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_Catalog.Tax.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_Shipping.Common.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_Vendor.Common.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_CustomerUser.Security.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_FilterLevel.Common.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/ShoppingCart.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_Order.ReturnRequestSettings.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_Tax.Payment.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_RewardPoints.Common.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_GeneralCommon.CustomHtml.cshtml
-src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_GeneralCommon.TopMenuItems.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/Shipping.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_Tax.DefaultTaxAddress.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/RewardPoints.cshtml
@@ -1084,7 +1107,6 @@ src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_Order.Common.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_Tax.Shipping.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_News.Comments.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_Order.OrderTotals.cshtml
-src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_GeneralCommon.FooterItems.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_Vendor.Catalog.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_Catalog.ExportImport.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_Shipping.Checkout.cshtml
@@ -1092,6 +1114,7 @@ src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_Order.Checkout.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/Forum.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_GeneralCommon.Pdf.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_CustomerUser.Account.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/Setting/_FilterLevel.FilterLevels.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Discount/Edit.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Discount/_CreateOrUpdate.Requirements.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Discount/_CreateOrUpdate.History.cshtml
@@ -1106,6 +1129,13 @@ src/Presentation/Nop.Web/Areas/Admin/Views/Discount/_CreateOrUpdate.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Discount/_CreateOrUpdate.Info.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Discount/_CreateOrUpdate.AppliedToProducts.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/ScheduleTask/List.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/FilterLevelValue/Edit.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/FilterLevelValue/_CreateOrUpdate.Products.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/FilterLevelValue/ProductAddPopup.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/FilterLevelValue/Create.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/FilterLevelValue/List.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/FilterLevelValue/_CreateOrUpdate.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/FilterLevelValue/_CreateOrUpdate.Info.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Blog/BlogPosts.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Blog/BlogPostEdit.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Blog/_CreateOrUpdate.Seo.cshtml
@@ -1222,12 +1252,14 @@ src/Presentation/Nop.Web/Areas/Admin/Views/Product/_CreateOrUpdate.Rental.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Product/RelatedProductAddPopup.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Product/_CreateOrUpdate.ProductAttributes.Info.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Product/ProductAttributeValueCreatePopup.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/Product/_CreateOrUpdate.FilterLevelValuesProducts.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Product/_CreateOrUpdate.Shipping.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Product/_CreateOrUpdateProductAttributeMapping.Values.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Product/_CreateOrUpdateProductAttributeMapping.Condition.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Product/CrossSellProductAddPopup.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Product/_CreateOrUpdateProductAttributeMapping.Info.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Product/_Create.Tour.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/Product/FilterLevelValuesAddPopup.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Product/_CreateOrUpdate.ProductAttributes.Combinations.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Product/ProductTags.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Product/_CreateOrUpdate.Recurring.cshtml
@@ -1250,6 +1282,7 @@ src/Presentation/Nop.Web/Areas/Admin/Views/Shared/Table.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Shared/Components/MultistoreDisabledWarning/Default.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Shared/Components/SettingMode/Default.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Shared/Components/StoreScopeConfiguration/Default.cshtml
+src/Presentation/Nop.Web/Areas/Admin/Views/Shared/Components/MetaTagsGenerator/Default.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Shared/Components/FullDescriptionGenerator/Default.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Shared/Components/AclCustomerRoles/Default.cshtml
 src/Presentation/Nop.Web/Areas/Admin/Views/Shared/Components/NopCommerceNews/Default.cshtml
@@ -1537,6 +1570,7 @@ src/Presentation/Nop.Web/Areas/Admin/Controllers/TemplateController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/NewsController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/TaxController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/SearchCompleteController.cs
+src/Presentation/Nop.Web/Areas/Admin/Controllers/FilterLevelValueController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/VendorController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/DownloadController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/ReviewTypeController.cs
@@ -1552,6 +1586,7 @@ src/Presentation/Nop.Web/Areas/Admin/Controllers/ReportController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/PictureController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/GiftCardController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/PluginController.cs
+src/Presentation/Nop.Web/Areas/Admin/Controllers/ArtificialIntelligenceController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/PreferencesController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/WidgetController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/CountryController.cs
@@ -1576,6 +1611,7 @@ src/Presentation/Nop.Web/Areas/Admin/Controllers/CurrencyController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/RecurringPaymentController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/SecurityController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/LanguageController.cs
+src/Presentation/Nop.Web/Areas/Admin/Controllers/MenuController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/QueuedEmailController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/CampaignController.cs
 src/Presentation/Nop.Web/Areas/Admin/Controllers/AuthenticationController.cs
@@ -1596,6 +1632,8 @@ src/Presentation/Nop.Web/Areas/Admin/Validators/Customers/CustomerValidator.cs
 src/Presentation/Nop.Web/Areas/Admin/Validators/Customers/CustomerAddressValidator.cs
 src/Presentation/Nop.Web/Areas/Admin/Validators/Customers/CustomerAttributeValidator.cs
 src/Presentation/Nop.Web/Areas/Admin/Validators/Plugins/PluginValidator.cs
+src/Presentation/Nop.Web/Areas/Admin/Validators/Menus/MenuValidator.cs
+src/Presentation/Nop.Web/Areas/Admin/Validators/Menus/MenuItemValidator.cs
 src/Presentation/Nop.Web/Areas/Admin/Validators/News/NewsItemValidator.cs
 src/Presentation/Nop.Web/Areas/Admin/Validators/Templates/ManufacturerTemplateValidator.cs
 src/Presentation/Nop.Web/Areas/Admin/Validators/Templates/CategoryTemplateValidator.cs
@@ -1725,6 +1763,16 @@ src/Presentation/Nop.Web/Areas/Admin/Models/Plugins/PluginSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Plugins/PluginModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Plugins/AdminNavigationPluginModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Plugins/PluginListModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Menus/SelectMenuItemProductListModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Menus/SelectMenuItemEntityModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Menus/MenuItemModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Menus/SelectMenuItemProductSearchModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Menus/MenuModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Menus/MenuListModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Menus/SelectMenuItemProductModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Menus/MenuItemListModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Menus/MenuSearchModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Menus/MenuItemSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/News/NewsItemListModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/News/NewsCommentModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/News/NewsItemModel.cs
@@ -1768,6 +1816,7 @@ src/Presentation/Nop.Web/Areas/Admin/Models/Common/BackupFileSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Common/LicenseCheckModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Common/SystemWarningCreatedEvent.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Common/CommonStatisticsModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Common/MetaTagsGeneratorModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Common/MultistorePreviewModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Common/AddressAttributeValueModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Common/PopularSearchTermSearchModel.cs
@@ -1780,11 +1829,10 @@ src/Presentation/Nop.Web/Areas/Admin/Models/Settings/CustomHtmlSettingsModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/SortOptionModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/TaxSettingsModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/ProductEditorSettingsModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Settings/FilterLevelSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/WebOptimizerConfigModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/SortOptionListModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/StoreInformationSettingsModel.cs
-src/Presentation/Nop.Web/Areas/Admin/Models/Settings/DisplayDefaultMenuItemSettingsModel.cs
-src/Presentation/Nop.Web/Areas/Admin/Models/Settings/DisplayDefaultFooterItemSettingsModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/MediaSettingsModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/NewsSettingsModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/InstallationConfigModel.cs
@@ -1797,6 +1845,7 @@ src/Presentation/Nop.Web/Areas/Admin/Models/Settings/HostingConfigModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/SecuritySettingsModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/AppSettingsModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/VendorSettingsModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Settings/FilterLevelSettingsModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/SettingModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/CatalogSettingsModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/StoreScopeConfigurationModel.cs
@@ -1805,6 +1854,7 @@ src/Presentation/Nop.Web/Areas/Admin/Models/Settings/ExternalAuthenticationSetti
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/MultiFactorAuthenticationSettingsModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/TranslationSettingsModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/GeneralCommonSettingsModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Settings/FilterLevelModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/LocalizationSettingsModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/DataConfigModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/SeoSettingsModel.cs
@@ -1819,6 +1869,8 @@ src/Presentation/Nop.Web/Areas/Admin/Models/Settings/MinificationSettingsModel.c
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/SettingSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/RewardPointsSettingsModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/CustomerSettingsModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Settings/FilterLevelListModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Settings/FilterLevelLocalizedModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/BlogSettingsModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/RobotsTxtSettingsModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Settings/AddressSettingsModel.cs
@@ -1911,13 +1963,17 @@ src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductTagProductSearchModel
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductSpecificationAttributeSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/CrossSellProductListModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/CategoryProductListModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/AddProductToFilterLevelValueModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/AddCrossSellProductModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/AddCrossSellProductListModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ReviewTypeListModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductReviewReviewTypeMappingSearchModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/FilterLevelValueModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/AddSpecificationAttributeModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductTagModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/TierPriceSearchModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/AddFilterLevelValueModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/FilterLevelValueProductSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/SpecificationAttributeProductSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductTagSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductPictureSearchModel.cs
@@ -1947,6 +2003,7 @@ src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductReviewReviewTypeMappi
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductAttributeMappingModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ManufacturerProductModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductAttributeCombinationListModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/FilterLevelValueListModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/AddProductToCategoryModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/CrossSellProductModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/PredefinedProductAttributeValueSearchModel.cs
@@ -1959,13 +2016,16 @@ src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductPictureModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ManufacturerModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/AddCrossSellProductSearchModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/FilterLevelValueProductModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/SpecificationAttributeOptionListModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/CategoryListModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductSpecificationAttributeModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/SpecificationAttributeGroupLocalizedModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/TierPriceListModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/FilterLevelValueSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/AssociateProductToAttributeValueSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductVideoSearchModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/AddProductToFilterLevelValueSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/AddRelatedProductSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductAttributeValueModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductVideoListModel.cs
@@ -1980,6 +2040,7 @@ src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductReviewListModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/RelatedProductSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/AddRelatedProductListModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/AddProductToManufacturerModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/AddProductToFilterLevelValueListModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/CategoryProductModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ArtificialIntelligenceFullDescriptionModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/StockQuantityHistoryListModel.cs
@@ -1999,6 +2060,7 @@ src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ProductAttributeProductSearc
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/RelatedProductListModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/SpecificationAttributeProductModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/AssociateProductToAttributeValueModel.cs
+src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/FilterLevelValueProductListModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/SpecificationAttributeSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/ManufacturerSearchModel.cs
 src/Presentation/Nop.Web/Areas/Admin/Models/Catalog/AddAssociatedProductListModel.cs
@@ -2194,8 +2256,11 @@ src/Presentation/Nop.Web/Areas/Admin/Factories/ManufacturerModelFactory.cs
 src/Presentation/Nop.Web/Areas/Admin/Factories/CustomerModelFactory.cs
 src/Presentation/Nop.Web/Areas/Admin/Factories/CheckoutAttributeModelFactory.cs
 src/Presentation/Nop.Web/Areas/Admin/Factories/ForumModelFactory.cs
+src/Presentation/Nop.Web/Areas/Admin/Factories/IFilterLevelValueModelFactory.cs
+src/Presentation/Nop.Web/Areas/Admin/Factories/IMenuModelFactory.cs
 src/Presentation/Nop.Web/Areas/Admin/Factories/AffiliateModelFactory.cs
 src/Presentation/Nop.Web/Areas/Admin/Factories/BaseAdminModelFactory.cs
+src/Presentation/Nop.Web/Areas/Admin/Factories/MenuModelFactory.cs
 src/Presentation/Nop.Web/Areas/Admin/Factories/VendorModelFactory.cs
 src/Presentation/Nop.Web/Areas/Admin/Factories/CampaignModelFactory.cs
 src/Presentation/Nop.Web/Areas/Admin/Factories/IMultiFactorAuthenticationMethodModelFactory.cs
@@ -2281,6 +2346,7 @@ src/Presentation/Nop.Web/Areas/Admin/Factories/ISecurityModelFactory.cs
 src/Presentation/Nop.Web/Areas/Admin/Factories/ISpecificationAttributeModelFactory.cs
 src/Presentation/Nop.Web/Areas/Admin/Factories/TemplateModelFactory.cs
 src/Presentation/Nop.Web/Areas/Admin/Factories/LanguageModelFactory.cs
+src/Presentation/Nop.Web/Areas/Admin/Factories/FilterLevelValueModelFactory.cs
 src/Presentation/Nop.Web/Areas/Admin/Factories/ITaxModelFactory.cs
 src/Presentation/Nop.Web/Areas/Admin/Factories/ScheduleTaskModelFactory.cs
 src/Presentation/Nop.Web/Areas/Admin/Factories/CategoryModelFactory.cs
@@ -2306,6 +2372,7 @@ src/Presentation/Nop.Web/Areas/Admin/Infrastructure/Cache/ModelCacheEventConsume
 src/Presentation/Nop.Web/Areas/Admin/Infrastructure/Mapper/Extensions/MappingExtensions.cs
 src/Presentation/Nop.Web/Areas/Admin/Infrastructure/Mapper/AdminMapperConfiguration.cs
 src/Presentation/Nop.Web/Areas/Admin/Infrastructure/AclEventConsumer.cs
+src/Presentation/Nop.Web/Areas/Admin/Infrastructure/LicenseTermsConsumer.cs
 src/Presentation/Nop.Web/Models/Vendors/VendorInfoModel.cs
 src/Presentation/Nop.Web/Models/Vendors/ApplyVendorModel.cs
 src/Presentation/Nop.Web/Models/Vendors/VendorAttributeModel.cs
@@ -2318,6 +2385,8 @@ src/Presentation/Nop.Web/Models/Order/OrderDetailsModel.cs
 src/Presentation/Nop.Web/Models/Order/ShipmentDetailsModel.cs
 src/Presentation/Nop.Web/Models/Order/CustomerOrderModel.cs
 src/Presentation/Nop.Web/Models/Order/CustomerReturnRequestsModel.cs
+src/Presentation/Nop.Web/Models/Menus/MenuItemModel.cs
+src/Presentation/Nop.Web/Models/Menus/MenuModel.cs
 src/Presentation/Nop.Web/Models/Checkout/CheckoutPaymentMethodModel.cs
 src/Presentation/Nop.Web/Models/Checkout/CheckoutConfirmModel.cs
 src/Presentation/Nop.Web/Models/Checkout/CheckoutBillingAddressModel.cs
@@ -2385,6 +2454,7 @@ src/Presentation/Nop.Web/Models/Catalog/SpecificationFilterModel.cs
 src/Presentation/Nop.Web/Models/Catalog/VendorProductReviewModel.cs
 src/Presentation/Nop.Web/Models/Catalog/ProductToWishlistModel.cs
 src/Presentation/Nop.Web/Models/Catalog/CatalogProductsCommand.cs
+src/Presentation/Nop.Web/Models/Catalog/FilterLevelValueOverviewModel.cs
 src/Presentation/Nop.Web/Models/Catalog/ManufacturerFilterModel.cs
 src/Presentation/Nop.Web/Models/Catalog/ProductOverviewModel.cs
 src/Presentation/Nop.Web/Models/Catalog/CustomerProductReviewModel.cs
@@ -2392,6 +2462,7 @@ src/Presentation/Nop.Web/Models/Catalog/VendorModel.cs
 src/Presentation/Nop.Web/Models/Catalog/SearchModel.cs
 src/Presentation/Nop.Web/Models/Catalog/ProductEmailAFriendModel.cs
 src/Presentation/Nop.Web/Models/Catalog/ProductTagModel.cs
+src/Presentation/Nop.Web/Models/Catalog/SearchFilterLevelValueModel.cs
 src/Presentation/Nop.Web/Models/Catalog/ProductAttributeModel.cs
 src/Presentation/Nop.Web/Models/Catalog/SpecificationAttributeValueFilterModel.cs
 src/Presentation/Nop.Web/Models/Catalog/VendorNavigationModel.cs
@@ -2409,10 +2480,10 @@ src/Presentation/Nop.Web/Models/Catalog/PopularProductTagsModel.cs
 src/Presentation/Nop.Web/Models/Catalog/VendorProductReviewsListModel.cs
 src/Presentation/Nop.Web/Models/Catalog/NewProductsModel.cs
 src/Presentation/Nop.Web/Models/Catalog/ProductSpecificationAttributeModel.cs
+src/Presentation/Nop.Web/Models/Catalog/FilterLevelValueSearchModel.cs
 src/Presentation/Nop.Web/Models/Catalog/ProductDetailsModel.cs
 src/Presentation/Nop.Web/Models/Catalog/SearchBoxModel.cs
 src/Presentation/Nop.Web/Models/Catalog/ProductSpecificationAttributeValueModel.cs
-src/Presentation/Nop.Web/Models/Catalog/TopMenuModel.cs
 src/Presentation/Nop.Web/Models/Catalog/ProductReviewModel.cs
 src/Presentation/Nop.Web/Models/Catalog/PriceRangeModel.cs
 src/Presentation/Nop.Web/Models/Catalog/SpecificationAttributeFilterModel.cs
@@ -2492,6 +2563,9 @@ src/Presentation/Nop.Web/Factories/CustomerModelFactory.cs
 src/Presentation/Nop.Web/Factories/JsonLdModelFactory.cs
 src/Presentation/Nop.Web/Factories/ForumModelFactory.cs
 src/Presentation/Nop.Web/Factories/ISitemapModelFactory.cs
+src/Presentation/Nop.Web/Factories/IFilterLevelValueModelFactory.cs
+src/Presentation/Nop.Web/Factories/IMenuModelFactory.cs
+src/Presentation/Nop.Web/Factories/MenuModelFactory.cs
 src/Presentation/Nop.Web/Factories/VendorModelFactory.cs
 src/Presentation/Nop.Web/Factories/PollModelFactory.cs
 src/Presentation/Nop.Web/Factories/TopicModelFactory.cs
@@ -2526,6 +2600,7 @@ src/Presentation/Nop.Web/Factories/CheckoutModelFactory.cs
 src/Presentation/Nop.Web/Factories/ITopicModelFactory.cs
 src/Presentation/Nop.Web/Factories/ICountryModelFactory.cs
 src/Presentation/Nop.Web/Factories/INewsModelFactory.cs
+src/Presentation/Nop.Web/Factories/FilterLevelValueModelFactory.cs
 src/Presentation/Nop.Web/Factories/ICheckoutModelFactory.cs
 src/Presentation/Nop.Web/Factories/ProductModelFactory.cs
 src/Presentation/Nop.Web/Factories/IJsonLdModelFactory.cs
@@ -2576,6 +2651,7 @@ src/Presentation/Nop.Web/App_Data/Localization/Installation/installation.nb-NO.x
 src/Presentation/Nop.Web/App_Data/Localization/Installation/installation.pl-PL.xml
 src/Presentation/Nop.Web/App_Data/Localization/Installation/installation.hu-HU.xml
 src/Presentation/Nop.Web/App_Data/Localization/Installation/installation.ca-ES.xml
+src/Presentation/Nop.Web/App_Data/Localization/Installation/installation.fi-FI.xml
 src/Presentation/Nop.Web/App_Data/Localization/Installation/installation.it-IT.xml
 src/Presentation/Nop.Web/App_Data/Localization/Installation/installation.lt-LT.xml
 src/Presentation/Nop.Web/App_Data/Localization/Installation/installation.fr-FR.xml
@@ -2675,8 +2751,10 @@ src/Presentation/Nop.Web.Framework/Migrations/UpgradeTo480/SettingMigration.cs
 src/Presentation/Nop.Web.Framework/Migrations/UpgradeTo470/LocalizationMigration.cs
 src/Presentation/Nop.Web.Framework/Migrations/UpgradeTo470/SettingMigration.cs
 src/Presentation/Nop.Web.Framework/Migrations/UpgradeTo470/AppSettingsMigration.cs
+src/Presentation/Nop.Web.Framework/Migrations/UpgradeTo490/MenuMigration.cs
 src/Presentation/Nop.Web.Framework/Migrations/UpgradeTo490/LocalizationMigration.cs
 src/Presentation/Nop.Web.Framework/Migrations/UpgradeTo490/SettingMigration.cs
+src/Presentation/Nop.Web.Framework/Migrations/UpgradeTo490/AppSettingsMigration.cs
 src/Presentation/Nop.Web.Framework/Migrations/UpgradeTo460/LocalizationMigration.cs
 src/Presentation/Nop.Web.Framework/Migrations/UpgradeTo460/UploadedImagesMigration.cs
 src/Presentation/Nop.Web.Framework/Migrations/UpgradeTo460/SettingMigration.cs
@@ -2739,6 +2817,7 @@ src/Presentation/Nop.Web.Framework/Models/IStoreMappingSupportedModel.cs
 src/Presentation/Nop.Web.Framework/Models/IPagingRequestModel.cs
 src/Presentation/Nop.Web.Framework/Models/BaseNopModel.cs
 src/Presentation/Nop.Web.Framework/Models/ActionConfirmationModel.cs
+src/Presentation/Nop.Web.Framework/Models/ArtificialIntelligence/IMetaTagsSupportedModel.cs
 src/Presentation/Nop.Web.Framework/Models/IAclSupportedModel.cs
 src/Presentation/Nop.Web.Framework/Models/Translation/TranslatedModel.cs
 src/Presentation/Nop.Web.Framework/Models/Translation/ITranslationSupportedModel.cs
@@ -3807,7 +3886,6 @@ src/Tests/Nop.Tests/Nop.Core.Tests/Infrastructure/TypeFinderTests.cs
 src/Tests/Nop.Tests/Nop.Core.Tests/Infrastructure/SingletonTests.cs
 src/Tests/Nop.Tests/Nop.Data.Tests/EntityRepositoryTests.cs
 src/Tests/Nop.Tests/Nop.Data.Tests/NopDataProviderTests.cs
-src/Tests/Nop.Tests/TestProcessorAccessor.cs
 src/Tests/Nop.Tests/SqLiteNopDataProvider.cs
 src/Tests/Nop.Tests/TestDataProviderManager.cs
 src/Tests/Nop.Tests/Nop.Web.Tests/Public/Validators/TestValidator.cs
@@ -3854,8 +3932,18 @@ src/Tests/Nop.Tests/Nop.Web.Tests/Startup.cs
 src/Tests/Nop.Tests/Nop.Web.Tests/Events/DateTimeConsumer.cs
 src/Tests/Nop.Tests/Nop.Web.Tests/Events/EventsTests.cs
 src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Vendors/VendorValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/ProductValidatorTests.cs
 src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/ManufacturerValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/ArtificialIntelligenceFullDescriptionValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/ProductAttributeValueModelValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/SpecificationAttributeValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/ProductReviewValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/ProductAttributeValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/ReviewTypeValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/ProductTagValidatorTests.cs
 src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/CategoryValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Catalog/PredefinedProductAttributeValueModelValidatorTests.cs
+src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Validators/Blogs/BlogPostValidatorTests.cs
 src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Readme.txt
 src/Tests/Nop.Tests/Nop.Web.Tests/Admin/Infrastructure/AutoMapperConfigurationTest.cs
 src/Tests/Nop.Tests/BaseEntityEqualityComparer.cs
@@ -3877,6 +3965,7 @@ src/Tests/Nop.Tests/Nop.Services.Tests/Common/AttributeParserTests.cs
 src/Tests/Nop.Tests/Nop.Services.Tests/Common/NopLinksDefaultsTests.cs
 src/Tests/Nop.Tests/Nop.Services.Tests/Common/GenericAttributeServiceTests.cs
 src/Tests/Nop.Tests/Nop.Services.Tests/Orders/OrderProcessingServiceTests.cs
+src/Tests/Nop.Tests/Nop.Services.Tests/Orders/OrderCustomValuesTests.cs
 src/Tests/Nop.Tests/Nop.Services.Tests/Orders/CheckoutAttributeParserAndFormatterTests.cs
 src/Tests/Nop.Tests/Nop.Services.Tests/Orders/OrderServiceTests.cs
 src/Tests/Nop.Tests/Nop.Services.Tests/Orders/OrderTotalCalculationServiceTests.cs
@@ -4022,6 +4111,12 @@ src/Libraries/Nop.Core/Domain/Customers/CustomerRole.cs
 src/Libraries/Nop.Core/Domain/Customers/CustomerLoggedOutEvent.cs
 src/Libraries/Nop.Core/Domain/Customers/RewardPointsActivatingDelayPeriodExtensions.cs
 src/Libraries/Nop.Core/Domain/Customers/CustomerActivatedEvent.cs
+src/Libraries/Nop.Core/Domain/Menus/MenuItemTemplate.cs
+src/Libraries/Nop.Core/Domain/Menus/MenuItem.cs
+src/Libraries/Nop.Core/Domain/Menus/Menu.cs
+src/Libraries/Nop.Core/Domain/Menus/MenuItemType.cs
+src/Libraries/Nop.Core/Domain/Menus/MenuType.cs
+src/Libraries/Nop.Core/Domain/Menus/MenuSettings.cs
 src/Libraries/Nop.Core/Domain/News/NewsCommentApprovedEvent.cs
 src/Libraries/Nop.Core/Domain/News/NewsComment.cs
 src/Libraries/Nop.Core/Domain/News/NewsSettings.cs
@@ -4037,20 +4132,20 @@ src/Libraries/Nop.Core/Domain/Seo/ISlugSupported.cs
 src/Libraries/Nop.Core/Domain/Seo/SeoSettings.cs
 src/Libraries/Nop.Core/Domain/Translation/TranslationSettings.cs
 src/Libraries/Nop.Core/Domain/Translation/TranslationServiceType.cs
+src/Libraries/Nop.Core/Domain/Common/IMetaTagsSupported.cs
 src/Libraries/Nop.Core/Domain/Common/AdressField.cs
 src/Libraries/Nop.Core/Domain/Common/CommonSettings.cs
 src/Libraries/Nop.Core/Domain/Common/SitemapSettings.cs
 src/Libraries/Nop.Core/Domain/Common/ISoftDeletedEntity.cs
 src/Libraries/Nop.Core/Domain/Common/Address.cs
 src/Libraries/Nop.Core/Domain/Common/AddressAttributeValue.cs
+src/Libraries/Nop.Core/Domain/Common/LicenseTerms.cs
 src/Libraries/Nop.Core/Domain/Common/AddressSettings.cs
-src/Libraries/Nop.Core/Domain/Common/DisplayDefaultFooterItemSettings.cs
 src/Libraries/Nop.Core/Domain/Common/SearchTerm.cs
 src/Libraries/Nop.Core/Domain/Common/SearchTermReportLine.cs
 src/Libraries/Nop.Core/Domain/Common/AddressAttribute.cs
 src/Libraries/Nop.Core/Domain/Common/PdfSettings.cs
 src/Libraries/Nop.Core/Domain/Common/SitemapXmlSettings.cs
-src/Libraries/Nop.Core/Domain/Common/DisplayDefaultMenuItemSettings.cs
 src/Libraries/Nop.Core/Domain/Common/AdminAreaSettings.cs
 src/Libraries/Nop.Core/Domain/Common/GenericAttribute.cs
 src/Libraries/Nop.Core/Domain/Polls/Poll.cs
@@ -4174,6 +4269,10 @@ src/Libraries/Nop.Core/Domain/Localization/ILocalizedEntity.cs
 src/Libraries/Nop.Core/Domain/Localization/Language.cs
 src/Libraries/Nop.Core/Domain/Localization/LocalizedProperty.cs
 src/Libraries/Nop.Core/Domain/Cms/WidgetSettings.cs
+src/Libraries/Nop.Core/Domain/FilterLevels/FilterLevelValue.cs
+src/Libraries/Nop.Core/Domain/FilterLevels/FilterLevelValueProductMapping.cs
+src/Libraries/Nop.Core/Domain/FilterLevels/FilterLevelEnum.cs
+src/Libraries/Nop.Core/Domain/FilterLevels/FilterLevelSettings.cs
 src/Libraries/Nop.Core/Domain/Gdpr/GdprLog.cs
 src/Libraries/Nop.Core/Domain/Gdpr/GdprRequestType.cs
 src/Libraries/Nop.Core/Domain/Gdpr/GdprSettings.cs
@@ -4323,10 +4422,12 @@ src/Libraries/Nop.Data/Migrations/NopMigrationAttribute.cs
 src/Libraries/Nop.Data/Migrations/MigrationManager.cs
 src/Libraries/Nop.Data/Migrations/MigrationVersionInfo.cs
 src/Libraries/Nop.Data/Migrations/UpgradeTo490/AddIndexesMigration.cs
+src/Libraries/Nop.Data/Migrations/UpgradeTo490/FilterLevelMigration.cs
 src/Libraries/Nop.Data/Migrations/UpgradeTo490/NewsLetterSubscriptionMigration.cs
 src/Libraries/Nop.Data/Migrations/UpgradeTo490/SchemaMigration.cs
 src/Libraries/Nop.Data/Migrations/UpgradeTo490/DataMigration.cs
 src/Libraries/Nop.Data/Migrations/UpgradeTo490/MultipleWishlistMigration.cs
+src/Libraries/Nop.Data/Migrations/NopGeneratorAccessor.cs
 src/Libraries/Nop.Data/Migrations/NullMigrationContext.cs
 src/Libraries/Nop.Data/Migrations/MigrationProcessType.cs
 src/Libraries/Nop.Data/Migrations/UpdateMigrationType.cs
@@ -4366,6 +4467,8 @@ src/Libraries/Nop.Data/Mapping/Builders/Customers/RewardPointsHistoryBuilder.cs
 src/Libraries/Nop.Data/Mapping/Builders/Customers/CustomerCustomerRoleMappingBuilder.cs
 src/Libraries/Nop.Data/Mapping/Builders/Customers/CustomerAddressMappingBuilder.cs
 src/Libraries/Nop.Data/Mapping/Builders/NopEntityBuilder.cs
+src/Libraries/Nop.Data/Mapping/Builders/Menus/MenuItemBuilder.cs
+src/Libraries/Nop.Data/Mapping/Builders/Menus/MenuBuilder.cs
 src/Libraries/Nop.Data/Mapping/Builders/News/NewsCommentBuilder.cs
 src/Libraries/Nop.Data/Mapping/Builders/News/NewsItemBuilder.cs
 src/Libraries/Nop.Data/Mapping/Builders/Configuration/SettingBuilder.cs
@@ -4437,6 +4540,8 @@ src/Libraries/Nop.Data/Mapping/Builders/Affiliates/AffiliateBuilder.cs
 src/Libraries/Nop.Data/Mapping/Builders/Localization/LanguageBuilder.cs
 src/Libraries/Nop.Data/Mapping/Builders/Localization/LocalizedPropertyMap.cs
 src/Libraries/Nop.Data/Mapping/Builders/Localization/LocaleStringResourceBuilder.cs
+src/Libraries/Nop.Data/Mapping/Builders/FilterLevels/FilterLevelValueProductMappingBuilder.cs
+src/Libraries/Nop.Data/Mapping/Builders/FilterLevels/FilterLevelValueBuilder.cs
 src/Libraries/Nop.Data/Mapping/Builders/Gdpr/GdprConsentBuilder.cs
 src/Libraries/Nop.Data/Mapping/Builders/Gdpr/GdprLogBuilder.cs
 src/Libraries/Nop.Data/Mapping/Builders/Logging/LogBuilder.cs
@@ -4490,6 +4595,7 @@ src/Libraries/Nop.Data/DataProviders/MsSqlDataProvider.cs
 src/Libraries/Nop.Data/DataProviders/MySqlDataProvider.cs
 src/Libraries/Nop.Data/DataProviders/PostgreSqlDataProvider.cs
 src/Libraries/Nop.Data/DataProviders/BaseDataProvider.cs
+src/Libraries/Nop.Data/DataProviders/Fluentmigrator/NopMySql5TypeMap.cs
 src/Libraries/Nop.Data/Nop.Data.csproj
 src/Libraries/Nop.Data/IRepository.cs
 src/Libraries/Nop.Data/Extensions/FluentMigratorExtensions.cs
@@ -4508,6 +4614,7 @@ src/Libraries/Nop.Services/Stores/StoreService.cs
 src/Libraries/Nop.Services/Stores/IStoreService.cs
 src/Libraries/Nop.Services/Stores/StoreMappingService.cs
 src/Libraries/Nop.Services/Stores/IStoreMappingService.cs
+src/Libraries/Nop.Services/BaseNopResult.cs
 src/Libraries/Nop.Services/Html/HtmlFormatter.cs
 src/Libraries/Nop.Services/Html/IHtmlFormatter.cs
 src/Libraries/Nop.Services/Html/CodeFormatter/TsqlFormat.cs
@@ -4599,6 +4706,10 @@ src/Libraries/Nop.Services/ExportImport/ExportTierPrice.cs
 src/Libraries/Nop.Services/ExportImport/ImportManager.cs
 src/Libraries/Nop.Services/Connected Services/EuropaCheckVatService/ConnectedService.json
 src/Libraries/Nop.Services/Connected Services/EuropaCheckVatService/Reference.cs
+src/Libraries/Nop.Services/Menus/IMenuService.cs
+src/Libraries/Nop.Services/Menus/Caching/MenuItemCacheEventConsumer.cs
+src/Libraries/Nop.Services/Menus/Caching/MenuCacheEventConsumer.cs
+src/Libraries/Nop.Services/Menus/MenuService.cs
 src/Libraries/Nop.Services/News/INewsService.cs
 src/Libraries/Nop.Services/News/NewsService.cs
 src/Libraries/Nop.Services/News/Caching/NewsCommentCacheEventConsumer.cs
@@ -4608,6 +4719,7 @@ src/Libraries/Nop.Services/Configuration/NopSettingsDefaults.cs
 src/Libraries/Nop.Services/Configuration/Caching/SettingCacheEventConsumer.cs
 src/Libraries/Nop.Services/Configuration/ISettingService.cs
 src/Libraries/Nop.Services/Configuration/SettingService.cs
+src/Libraries/Nop.Services/Configuration/SettingServiceExtensions.cs
 src/Libraries/Nop.Services/ArtificialIntelligence/GeminiHttpClientHelper.cs
 src/Libraries/Nop.Services/ArtificialIntelligence/ArtificialIntelligenceService.cs
 src/Libraries/Nop.Services/ArtificialIntelligence/DeepSeekHttpClientHelper.cs
@@ -4710,8 +4822,10 @@ src/Libraries/Nop.Services/Orders/Caching/CheckoutAttributeCacheEventConsumer.cs
 src/Libraries/Nop.Services/Orders/Caching/GiftCardCacheEventConsumer.cs
 src/Libraries/Nop.Services/Orders/IOrderProcessingService.cs
 src/Libraries/Nop.Services/Orders/AppStartedConsumer.cs
+src/Libraries/Nop.Services/Orders/CustomValue.cs
 src/Libraries/Nop.Services/Orders/OrderReportService.cs
 src/Libraries/Nop.Services/Orders/ReturnRequestService.cs
+src/Libraries/Nop.Services/Orders/CustomValueDisplayLocation.cs
 src/Libraries/Nop.Services/Orders/IOrderTotalCalculationService.cs
 src/Libraries/Nop.Services/Orders/ReturnRequestAvailability.cs
 src/Libraries/Nop.Services/Orders/NopOrderDefaults.cs
@@ -4727,10 +4841,12 @@ src/Libraries/Nop.Services/Orders/ReturnableOrderItem.cs
 src/Libraries/Nop.Services/Orders/GiftCardService.cs
 src/Libraries/Nop.Services/Orders/ShoppingCartService.cs
 src/Libraries/Nop.Services/Orders/OrderService.cs
+src/Libraries/Nop.Services/Orders/CustomValues.cs
 src/Libraries/Nop.Services/Orders/IRewardPointService.cs
 src/Libraries/Nop.Services/Orders/IOrderService.cs
 src/Libraries/Nop.Services/Extensions.cs
 src/Libraries/Nop.Services/Catalog/NopCatalogDefaults.cs
+src/Libraries/Nop.Services/Catalog/IProductReviewService.cs
 src/Libraries/Nop.Services/Catalog/ProductExtensions.cs
 src/Libraries/Nop.Services/Catalog/ManufacturerTemplateService.cs
 src/Libraries/Nop.Services/Catalog/IPriceCalculationService.cs
@@ -4779,6 +4895,7 @@ src/Libraries/Nop.Services/Catalog/Caching/ProductAttributeCombinationCacheEvent
 src/Libraries/Nop.Services/Catalog/ProductService.cs
 src/Libraries/Nop.Services/Catalog/ProductAttributeService.cs
 src/Libraries/Nop.Services/Catalog/CopyProductService.cs
+src/Libraries/Nop.Services/Catalog/ProductReviewService.cs
 src/Libraries/Nop.Services/Catalog/IProductAttributeFormatter.cs
 src/Libraries/Nop.Services/Catalog/IProductTagService.cs
 src/Libraries/Nop.Services/Catalog/ProductTemplateService.cs
@@ -4878,6 +4995,8 @@ src/Libraries/Nop.Services/Cms/IWidgetPlugin.cs
 src/Libraries/Nop.Services/Cms/WidgetPluginManager.cs
 src/Libraries/Nop.Services/Events/EventPublisher.cs
 src/Libraries/Nop.Services/Events/IConsumer.cs
+src/Libraries/Nop.Services/FilterLevels/IFilterLevelValueService.cs
+src/Libraries/Nop.Services/FilterLevels/FilterLevelValueService.cs
 src/Libraries/Nop.Services/Installation/InstallSampleData.cs
 src/Libraries/Nop.Services/Installation/InstallSampleData.Products.cs
 src/Libraries/Nop.Services/Installation/ISO3166.cs
