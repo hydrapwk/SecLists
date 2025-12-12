@@ -92,7 +92,6 @@ $rpc/google.internal.maps.mapsjs.v1.MapsJsInternalService
 /*/commits
 /*/compare
 /*/contributors
-/*/edit$
 /*/forks
 /*/graphs
 /*/issues/new
@@ -104,7 +103,6 @@ $rpc/google.internal.maps.mapsjs.v1.MapsJsInternalService
 /*/stargazers
 /*/tags
 /*/watchers
-/*source=
 /.git
 /MANUALS/*.pdf$
 /Search/
@@ -147,19 +145,23 @@ $rpc/google.internal.maps.mapsjs.v1.MapsJsInternalService
 /download/thankyou.aspx
 /download/thankyou.aspx?
 /download?
-/edit$
 /events/atom
 /events/rss
 /events/xml
+/favorites_list
 /feedarticle
 /followers
+/followers$
 /following
+/following$
 /format:thumbnail
 /forum-attachment
 /gcrnsts
 /home/contact*
 /isv/*?
 /layout/
+/leads/*/jsplayer_show_lead_form.html
+/leads/*/show_form.html
 /login
 /lookup?
 /mediaapi/
@@ -185,8 +187,7 @@ $rpc/google.internal.maps.mapsjs.v1.MapsJsInternalService
 /rsvps/*xml
 /search
 /search/
-/search/*?q=
-/search?q=
+/search?
 /security/search-results.aspx?
 /signin-oidc
 /store/*/layout/
@@ -218,7 +219,12 @@ $rpc/google.internal.maps.mapsjs.v1.MapsJsInternalService
 /video-
 /wal/
 /widget_
+/wiki/*/edit
+/wiki/*/history
+/wiki/*/info
+/wiki/Help:
 /wiki/Special:
+/wiki/Talk:
 /wiki/index.php/Help
 /wiki/index.php/MediaWiki
 /wiki/index.php/Special:
@@ -366,8 +372,6 @@ $rpc/google.internal.maps.mapsjs.v1.MapsJsInternalService
 ?x
 ?ysclid
 ?zipstatecity=
-@me
-@me$
 AccountDisavow?
 ActivityUID=
 COG
@@ -469,11 +473,6 @@ _
 _/aihub_pod
 _/ain/_/js
 _/alkali-learn
-_/api/posts/*/related
-_/api/posts/*/responses
-_/api/posts/*/responsesStream
-_/api/users/*/meta
-_/api/users/*/profile/stream
 _/apps-viewer
 _/atari
 _/boq
@@ -489,6 +488,7 @@ _/fonts
 _/gstore
 _/mss/boq-bard-web
 _/mss/boq-chrome-cloudcast
+_/mss/boq-cloud-client
 _/mss/boq-cloud-web3-portal
 _/mss/boq-deepmind-alphafold-server
 _/mss/boq-discover-labs
@@ -559,6 +559,8 @@ _vti_pvt
 _vti_txt
 a
 a/bz?
+aaut
+ab_tests
 about
 about$
 about/careers/applications-a/jobs/results
@@ -636,6 +638,7 @@ ads/local
 ads/public
 ads/research
 ads/ubaq
+advice
 advisor/*zx1fa
 adx/bin
 affil
@@ -740,7 +743,6 @@ athletic/get-current-user
 athletic/global-color-test.php
 athletic/global-font-test.php
 athletic/graphql
-athletic/interactive
 athletic/ip
 athletic/login
 athletic/login/$
@@ -852,9 +854,17 @@ books?*zoom=
 books?*zoom=1
 books?*zoom=5
 boutique/sitemaps
-business
+bricks/image
+business/adshare
+business/adshare/faqs
 business/blahblah
+business/feedback
+business/leads/jsplayer_show_lead_form.html
+business/leads/show_form.html
 business/learning/blog
+business/pos-system/shop
+business/premium/is_payment_pending
+business/promotion
 business/sales/blog
 buyside-e2e-monitor
 cai
@@ -927,6 +937,7 @@ communities/blogs/PortalResults.mspx?
 communities/eventdetails.mspx?
 communities/rss.aspx*
 communities/sitemap
+community
 community-guidelines
 community/*/category/*
 community/*/comments
@@ -937,6 +948,7 @@ community/category/*
 community/comments
 community/feed
 community/trackback
+company
 companyDir
 compare
 compressiontest
@@ -953,6 +965,7 @@ content-guest/rss/channels
 control
 copilot
 copilot/c
+copilotsearch?q=
 copy-conductor/crawled
 core/
 core/*.css$
@@ -1083,7 +1096,6 @@ drawings
 drive
 droidguard
 e
-earn
 earth/00-favicon.ico
 earth/social
 ebook
@@ -1230,6 +1242,7 @@ eusurvey/publication
 eusurvey/resources
 eusurvey/webservice
 evaluation
+event
 events
 events/atom
 events/rss
@@ -1252,6 +1265,7 @@ external/overture
 external_hosted
 f/healthcheck
 faves-i_love_u_get_away_from_me
+favorite
 fb
 fbml/ajax/dialog
 fd/
@@ -1336,6 +1350,8 @@ france/mnp_utility.mspx?
 friends
 from_id=
 frommers
+frontend-track
+fullscreen/ReportLinker
 fun/api/
 fun/g/
 fundraiser/charity
@@ -1359,7 +1375,6 @@ get_midroll_info
 get_video
 get_video_info
 gethelp/
-gift
 gifts
 gist
 giveaway/host/setup
@@ -1468,6 +1483,7 @@ gp/yourstore
 gpay/social
 gql
 graphql?
+group
 groupAnswers
 groupSharingMsg
 groups
@@ -1519,10 +1535,10 @@ hp/video
 hpc/*/supported-applications.aspx?
 hpm
 hpmob
-http://amazon.co.uk/robots.txt
-http://sites.google.com/robots.txt
-http://t.me/robots.txt
-http://wa.me/robots.txt
+http://dropbox.com/robots.txt
+http://m.youtube.com/robots.txt
+http://mozilla.org/robots.txt
+http://npr.org/robots.txt
 hub?category=
 hz/contact-us/ajax/initiate-trusted-contact
 hz/help/contact/*/message/$
@@ -1530,6 +1546,7 @@ hz/leaderboard/hall-of-fame
 hz/leaderboard/top-reviewers
 i/api
 i/u
+ia
 icdp
 icons
 id-id.www.cloudflare.com
@@ -1554,19 +1571,19 @@ images/search/?
 images/search?
 images/searchbyimage
 images?
-images?*mmbaseline*
-images?*nr*
 imaginecup/*
 imesync
 imgres
 imode/?
 imode/search?
 imode?
+in
 inapp
 inbox
 inboxcommerce
 includes
 incontext
+index.html
 index.html?
 index.php/admin/
 index.php/comment/reply/
@@ -1676,6 +1693,7 @@ land-browse-bff
 landing/cmsnext-root
 landing/now/ontap
 landing/signout.html
+language?
 languages/404_en.htm
 leaf
 learning*&auth=true
@@ -1756,6 +1774,7 @@ macros
 mactopia/help.mspx?
 mail/$
 mailman
+main
 manage_playlist
 map_tile.php
 mapabcpoi?
@@ -1768,6 +1787,8 @@ maps/?entry=wc
 maps/?f=
 maps/?hl=
 maps/?q=
+maps/?saddr=
+maps/?sid=
 maps/@
 maps/_
 maps/about
@@ -1805,6 +1826,13 @@ maps/vt?
 maps?
 maps?*file=
 maps?*output=classic
+maps?daddr=
+maps?entry=wc
+maps?f=
+maps?hl=
+maps?q=
+maps?saddr=
+maps?sid=
 mapslt?
 mapspro
 mapstt?
@@ -1816,12 +1844,10 @@ mats/default.aspx?diagid=100001&eulaaccept=yes*
 mbox
 me
 medgen/?term=
-media
 media-manager
 meetup_api/?
 meetup_api?
 memberInvite
-membership
 merchant/reviews?
 merchantapps
 message
@@ -1897,6 +1923,7 @@ newsroom/dae
 newsround
 newssearch
 newsstand
+nextjs
 niosh/archive/
 nl-nl.www.cloudflare.com
 nl-nl/feedback
@@ -1931,7 +1958,6 @@ osview
 otherContacts
 ott
 p.php
-p/*/share
 package_files_uploaded_via_chrome
 page-
 page-2158488_44000074$
@@ -1947,7 +1973,6 @@ panel
 pantheon
 pantheon-platform
 participate/conferences.xml
-partner-program
 partners
 password_expired
 patent-search/frontend
@@ -1982,6 +2007,7 @@ photos/i_love_u_get_away_from_me
 photos/tags/*/page
 photos/youpy
 ping
+pingback
 pl-pl.www.cloudflare.com
 pl-pl/feedback
 pl-pl/lp
@@ -2041,6 +2067,7 @@ prettyearth/assets
 preview
 previewtemplate
 print
+private
 proFile/history?
 product-reviews/B0069IY63Y
 product/reviews?
@@ -2094,6 +2121,7 @@ pt-br/searchresults
 pt-br/solutions
 pt-br/upload
 pt-br/vimeo-academy
+pub/dir
 publications
 purchases
 puzzles/leaderboards/invite
@@ -2103,7 +2131,6 @@ q=
 qnasearch?
 qr
 quality_form?
-r
 rackspace/elevating-performance
 radio/imda
 ramfiles
@@ -2181,8 +2208,10 @@ safety
 safetycheck
 salary-explorer/api
 sars-cov-2
+sc
 scholar
 scholar_share
+school
 scl
 scripts
 sdch
@@ -2210,8 +2239,6 @@ search/users
 search/video?
 search?
 search?*tbm=map
-search?q$
-search?q=
 search?q=%23
 search\?
 search_history
@@ -2256,7 +2283,7 @@ shop/iphone/payments/overlay
 shop/productpage
 shop/topics
 shop/view/product
-shop?
+shop?*
 shopping-content-api/product_images
 shopping/deals
 shopping/product
@@ -2269,6 +2296,7 @@ shopping/shoppingpage/casa
 shopping/suppliers/search
 shopping?
 shopstream
+showcase
 sidewiki/entry
 signature
 signin
@@ -2548,6 +2576,8 @@ sites/workday
 sites/xerox
 sites/zenithwatches
 sites/zurich
+slideshow/*/lead-form
+slideshow/embed_code
 slink
 slp/*/b$
 slp/s$
@@ -2640,8 +2670,6 @@ store/xhr/getdevicepermissions
 store/xhr/install
 storefront
 storepicker
-stores$
-stores/
 stores/page/*visitId=
 stories
 storyworks/preview
@@ -2817,7 +2845,6 @@ travel/scripts
 travel/search
 travel/secure
 travel/story
-trending
 trends
 trends/api
 trends/beta
@@ -2855,6 +2882,7 @@ ui
 unsub
 until=
 upload
+uploads
 urchin_test
 url
 user
@@ -2875,7 +2903,6 @@ v2
 v3
 v3/openapi
 valkyrie-playground
-verified-authors
 verify_age
 vi-vn.www.cloudflare.com
 vi-vn/feedback
@@ -2887,13 +2914,8 @@ videos/browsing
 videos/explore
 videos/favorites
 videos/feed
-videos/feedcontent
 videos/music
-videos/music/
-videos/music/?
-videos/music?
 videos/trending
-videos/trendingcontent
 viewer
 viewlocale=zh_CN
 viewvc
@@ -2945,6 +2967,9 @@ wiki/%D8%AE%D8%A7%D8%B5%3ASearch
 wiki/%D8%AE%D8%A7%D8%B5:Search
 wiki/%E7%89%B9%E5%88%A5%3ASearch
 wiki/%E7%89%B9%E5%88%A5:Search
+wiki/*/edit
+wiki/*/history
+wiki/*/info
 wiki/Anv%C3%A4ndardiskussion
 wiki/Anv%C3%A4ndare
 wiki/Användardiskussion
@@ -2968,7 +2993,7 @@ wiki/Discu%C5%A3ie_Wikipedia%3APagini_de_%C5%9Fters
 wiki/Discu%C5%A3ie_Wikipedia:Pagini_de_%C5%9Fters
 wiki/Discussioni_progetto%3ACococo
 wiki/Discussioni_progetto:Cococo
-wiki/Fundraising_2007/comments
+wiki/Help:
 wiki/K%C3%A4ytt%C3%A4j%C3%A4:
 wiki/Keskustelu_k%C3%A4ytt%C3%A4j%C3%A4st%C3%A4:
 wiki/Keskustelu_käyttäjästä:
@@ -2999,6 +3024,7 @@ wiki/Spezial:
 wiki/Spezial:Suche
 wiki/Spezial:Zuf%C3%A4llige_Seite
 wiki/Spezial:Zufällige_Seite
+wiki/Talk:
 wiki/Template%3AEditnotices
 wiki/Template%3ATemplateStyles_sandbox
 wiki/Template:Editnotices
@@ -3229,7 +3255,7 @@ wiki/Wikipedia_Diskussion:Checkuser
 wiki/Wikipedia_Diskussion:Spam-Blacklist-Log
 wiki/Wikipedia_talk%3AAbuse_reports
 wiki/Wikipedia_talk%3AAbuse_response
-wiki/Wikipedia_talk%3AAdministrator_electionshttp://goo.gl/robots.txt
+wiki/Wikipedia_talk%3AAdministrator_electionshttp://policies.google.com/robots.txt
 wiki/Wikipedia_talk%3AAdministrator_recall
 wiki/Wikipedia_talk%3AAdministrator_review
 wiki/Wikipedia_talk%3AAdministrators%27_noticeboard
@@ -3473,6 +3499,7 @@ zh-tw/feedback
 zh-tw/lp
 zh-tw/searchresults
 zh_CN
+~
 429.html
 2000/06/webdata/xslt
 2000/06/webdata/xsv?
